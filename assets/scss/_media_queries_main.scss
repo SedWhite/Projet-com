@@ -4,3 +4,17 @@
 
 
 // }
+
+@media screen and (max-width: 1024px){
+    #menuBurger{
+        display: block;
+    }
+    #desktopNavbar{
+        display: none;
+        visibility: hidden;
+    }
+    header{
+        background-image: url(../img/bg_img_mobile.png);
+        background-position: top;
+    }
+}

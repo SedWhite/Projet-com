@@ -8,14 +8,13 @@
 @mixin decoration_text_none {
     text-decoration: none;
     list-style: none;
-    color: $fourthColor;
 }
 
 @mixin decoration_text_inside {
     list-style: inside;
 }
 
-@mixin button ($color_text:$primaryColor, $background_color:$secondaryColor, $border_color:$secondaryColor){
+@mixin button ($color_text:$thirdColor, $background_color:$secondaryColor, $border_color:$secondaryColor){
     font-size: 18px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -26,7 +25,7 @@
     background-color: $background_color;
 }
 
-@mixin button_v2 ($color_text:$secondaryColor, $background_color: $primaryColor, $border_color:$secondaryColor){
+@mixin button_v2 ($color_text:$thirdColor, $background_color: $primaryColor, $border_color:$secondaryColor){
     font-size: 10px;
     font-weight: bolder;
     text-transform: uppercase;
@@ -56,6 +55,7 @@
 }
 
 @mixin h3 {
+    font-family: overpass;
     font-weight: bolder;
     text-transform: uppercase;
 }

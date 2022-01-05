@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "poiret";
+  src: url(../fonts/PoiretOne-Regular.ttf);
+}
+@font-face {
+  font-family: "overpass";
+  src: url(../fonts/Overpass-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "numans";
+  src: url(../fonts/Numans-Regular.ttf);
+}
+header {
+  background-image: url(../img/bg_img3.jpg);
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  font-weight: bolder;
+}
+header #desktopNavbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 30px;
+  font-family: overpass;
+  font-size: 1.5em;
+}
+header #desktopNavbar img {
+  width: 80px;
+}
+header #desktopNavbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+header #desktopNavbar ul > li {
+  padding: 35px 25px;
+}
+header #desktopNavbar .socialNetworks i {
+  padding: 0 5px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#menuBurger {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#dropdown {
+  padding-right: 20px;
+  font-family: overpass;
+  font-size: 1.5em;
+  text-align: right;
+  background-color: #FFFFFF;
+  animation-name: "dropdownAnim";
+  animation-duration: 0.5s;
+}
+#dropdown a {
+  color: black;
+}
+
+@keyframes dropdownAnim {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 120px;
+  }
+}
+.displayNone {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  width: 100%;
+  font-family: numans, "roboto";
+}
+
+a {
+  color: #FFFFFF;
+}
+
+h1 {
+  font-family: poiret;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-family: overpass;
+  font-size: 1.2em;
+}
+
+p {
+  letter-spacing: 10%;
+  line-height: 25px;
+  font-size: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  #menuBurger {
+    display: block;
+  }
+
+  #desktopNavbar {
+    display: none;
+    visibility: hidden;
+  }
+
+  header {
+    background-image: url(../img/bg_img_mobile.png);
+    background-position: top;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

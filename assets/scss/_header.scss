@@ -1,23 +1,65 @@
-* {
-    @include decoration_text_none
+header {
+    background-image: url(../img/bg_img3.jpg);
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    font-weight: bolder;
+    #desktopNavbar{
+        @include flex ($just:space-between, $dir: row, $align: center);
+        padding: 5px 30px;
+        font-family: overpass;
+        font-size: 1.5em;
+        img{
+            width: 80px;
+        }
+        ul {
+            @include flex ($just:space-around, $dir: row, $align: center);
+        }
+
+        ul>li {
+            padding: 35px 25px;
+        }
+        .socialNetworks{
+            i{
+                padding: 0 5px;
+                color: $primaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+}
+#menuBurger{
+    position: absolute;
+    right : 20px;
+    top : 40px;
+    font-size: 2em;
+    cursor: pointer;
 }
 
-header {
-    height: 100px;
-    width: 100%;
-    font-weight: bolder;
+// DROPDOWN LORSQUE VISIBLE
+#dropdown{
+    padding-right: 20px;
+    font-family: overpass;
+    font-size: 1.5em;
+    text-align: right;
     background-color: $primaryColor;
-    display: flex;
-    justify-content: space-around;
-    padding: 16px 0px 16px 0px;
-   
-   
-    ul {
-        display: flex; 
-        align-items: center; 
+    animation-name: "dropdownAnim";
+    animation-duration: 0.5s;
+    a{
+        color: $secondaryColor;
     }
+}
 
-    ul>li {
-        padding: 35px 25px;
+@keyframes dropdownAnim{
+    from{
+        height: 0px;
     }
+    to {
+        height: 120px;
+    }
+}
+
+.displayNone{
+    display: none;
 }
