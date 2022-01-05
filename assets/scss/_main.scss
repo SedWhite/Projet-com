@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+}
+
+body {
+    width: 100%;
+    font-family: "roboto";
+
+    //--------------------- BANNIERE PAGE ET SLOGANT
+    #banniere_page {
+        @include flex;
+        padding: 80px 0px;
+        background-image: url(../images/photo-1556139943-4bdca53adf1e\ 1.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        >h1 {
+            width: 50%;
+            font-size: 64px;
+            font-weight: 400pX;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 0.5em;
+        }
+
+        >a {
+            @include button;
+        }
+    }   
+
+    //--------------------- APPROCHE PEP'S COACHING
+    #approche {
+        @include flex;
+
+        .titre {
+            @include titre_et_intro;
+        }
+
+        >article {
+            @include flex (center, row, center);
+            padding: 10px;
+
+            div>img {
+                max-width: 100%;
+                padding: 10px;
+                margin-right: 25px;
+            }
+        }
+
+        >article>#contenu_article {
+
+            h4 {
+                padding: 16px;
+            }
+            
+            p {
+                margin-bottom: 5px;
+                padding: 0px 0px 0px 40px;
+                @include decoration_text_inside;
+            }
+         
+        }
+
+        #ligne {
+            margin: 1em 1em 1em 1em;
+        }
+    }
+
+    //--------------------- METHODE
+    #methode {
+        @include flex;
+        padding: 10px;
+
+        .titre {
+            @include titre_et_intro;
+
+            a {
+                @include button($secondaryColor, $primaryColor, $secondaryColor);
+                margin-top: 2em;
+            }
+        }
+
+        .ranger {
+            @include flex (center, row, center);
+
+            .cm {
+                width: 100%;
+                @include flex;
+                margin: 10px;
+
+                img {
+                    margin-bottom: 20px;
+                }
+                
+                p {
+                    height: 72px;
+                    width: 300px;
+                    @include flex;
+                    text-align: center
+                }
+            }
+        }
+    }
+
+    //--------------------- LES ACCOMPAGNEMENTS
+    #accompagnement {
+        @include flex;
+        text-align: center;
+
+        .titre {
+            @include titre_et_intro;
+
+            div>p {
+                width: 100%;
+                font-size: smaller;
+                font-weight: lighter;
+            }
+
+            div>p:nth-child(1) {
+                margin-top: 10px;
+            }
+        }
+
+        #liste_offres {
+            @include flex (center, row, flex-start);
+            width: 70%;
+            position: relative;
+            z-index: 1;
+           
+            .offres {
+                @include offers_size;
+            }
+
+            .offres>#titre_h3 {
+                @include h3;
+            }
+
+            .offres>p {
+                height: 20px;
+            }
+
+            .offres>div>p {
+                margin: 30px 0px 30px 0px;
+            }
+
+            .offres>.boutton_decouvrir>a {
+                @include button_v2;
+                bottom: 5px;
+                // margin-left: 6em;
+                position: absolute;
+                z-index: 2;               
+            }
+        }
+    }
+
+    //--------------------- ET ILS NE REGRETTENT PAS
+    #les_clients {
+        
+        h2 {
+            @include titre_et_intro;
+        }
+
+        #temoignage {
+            @include flex(center, row, flex-start);
+            
+
+            article {
+                @include flex (flex-start, column, center);
+                height: 500px;
+                width: 22%;
+                margin: 2.5em;
+                border: solid 2px $thirdColor;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+
+                img {
+                    top: -40px;
+                    position: relative;
+                    z-index: 2;
+                }
+
+                p {
+                    margin: 20px;
+                }
+            }
+
+        }
+
+        
+    }
+
+    //--------------------- BLOG
+    #blog {
+        @include flex;
+        @include titre_et_intro;
+
+        #autre_articles {
+            width: 100%;
+            margin-top: 3em;
+
+            .lien_page {
+                @include flex (center, row, flex-start);
+
+                .text_article {
+                    width: 48%;
+                    @include flex(flex-start, column, flex-start);
+                    margin-left: 8em;
+
+                    p {
+                        margin-top: 30px;
+                    }
+
+                    a {
+                        @include button_v2;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            >div {
+                background-color: $fifthColor;
+                height: 1px;
+                width: 100%;
+                margin: 20px 0px 20px;
+            }
+        }
+    }
+}
