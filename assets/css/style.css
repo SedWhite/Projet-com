@@ -114,6 +114,16 @@ p {
   font-size: 1em;
 }
 
+.button {
+  font-size: 24px;
+  font-family: overpass;
+  color: #67F7F0;
+  border-radius: 30px;
+  padding: 10px 40px;
+  border: solid black 2px;
+  background-color: black;
+}
+
 @media screen and (max-width: 1024px) {
   #menuBurger {
     display: block;

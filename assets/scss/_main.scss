@@ -28,3 +28,7 @@ p{
     line-height: 25px;
     font-size: 1em;
 }
+
+.button{
+    @include button;
+}
