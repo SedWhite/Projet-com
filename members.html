@@ -12,12 +12,19 @@
 <body>
 
     <header>
+        <!-- DESKTOP -->
         <nav id="desktopNavbar">
             <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="members.html">Membres</a></li>
+                <li id="desktopMember">Membres
+                    <ul class="memberDropdown displayNone">
+                        <li><a href="members.html">Alexis Doyen</a></li>
+                        <li><a href="members.html">Lucas Edwige</a></li>
+                        <li><a href="members.html">Aloïs Patoor</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="socialNetworks">
@@ -29,11 +36,18 @@
         <div id="menuBurger" class="displayNone">
             &#x2630
         </div>
+        <!-- MOBILE -->
         <nav id="dropdown" class="displayNone">
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="members.html">Membres</a></li>
+                <li id="mobileMember">Membres
+                    <ul class="memberMobileDropdown displayNone">
+                        <li><a href="members.html">Alexis Doyen</a></li>
+                        <li><a href="members.html">Lucas Edwige</a></li>
+                        <li><a href="members.html">Aloïs Patoor</a></li>
+                    </ul>
+                </li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>

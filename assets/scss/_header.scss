@@ -37,7 +37,7 @@ header {
     cursor: pointer;
 }
 
-// DROPDOWN LORSQUE VISIBLE
+// DROPDOWN DU MENU BURGER LORSQUE VISIBLE
 #dropdown{
     padding-right: 20px;
     font-family: overpass;
@@ -59,6 +59,8 @@ header {
         height: 120px;
     }
 }
+
+// DROPDOWN DES NOMS DES MEMBRES
 
 .displayNone{
     display: none;
