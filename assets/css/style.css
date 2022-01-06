@@ -124,6 +124,18 @@ p {
   background-color: black;
 }
 
+footer {
+  background-color: grey;
+  width: 100%;
+  height: 150px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1024px) {
   #menuBurger {
     display: block;
