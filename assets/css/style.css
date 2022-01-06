@@ -369,12 +369,9 @@ p {
   max-height: 200px;
 }
 
-* {
-  color: #67F7F0;
-}
-
 footer {
   position: relative;
+  color: #67F7F0;
 }
 footer .barre {
   position: absolute;
