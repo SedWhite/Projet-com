@@ -39,6 +39,9 @@ header #desktopNavbar .navbar {
   align-items: center;
   flex-direction: row;
 }
+header #desktopNavbar .navbar a:hover {
+  color: #67F7F0;
+}
 header #desktopNavbar .navbar > li {
   padding: 35px 25px;
 }
