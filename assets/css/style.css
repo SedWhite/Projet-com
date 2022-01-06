@@ -164,7 +164,7 @@ h1 {
   margin: 20px 0;
 }
 
-h1::after {
+.blueLine {
   width: 100px;
   height: 2px;
   background-color: #67F7F0;
@@ -191,8 +191,33 @@ p {
   background-color: black;
 }
 
-#introGallery {
-  margin: 5%;
+#presentation, #caroussel, #gallerie, #about {
+  margin: 2%;
+}
+
+#mainIndex h1 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#presentation .indexLogo {
+  margin: 50px auto;
+  text-align: center;
+}
+#presentation .indexLogo img {
+  width: 20%;
+}
+#presentation .indexLogo .afterLogo {
+  font-family: overpass;
+  font-size: 18px;
+}
+
+.darkBackground {
+  margin: 0;
+  background-color: #303037;
+}
+.darkBackground p, .darkBackground h1, .darkBackground h2 {
+  color: #FFFFFF;
 }
 
 #galleryItself {

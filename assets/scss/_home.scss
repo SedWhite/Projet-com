@@ -1,13 +1,40 @@
-#presentation{
-    .indexLogo{
-        margin: 50px auto;
+#mainIndex{
+    h1{
         text-align: center;
-        img{
-            width: 20%;
-        }
-        .afterLogo{
-            font-family: overpass;
-            font-size: 18px;
+        margin: 20px 0;
+    }
+    #presentation{
+        .indexLogo{
+            margin: 50px auto;
+            text-align: center;
+            img{
+                width: 20%;
+            }
+            .afterLogo{
+                font-family: overpass;
+                font-size: 18px;
+            }
         }
     }
+    .darkBackground{
+        padding: 2%;
+        margin: 0;
+        background-color: $fourthColor;
+        section{
+            article{
+                @include flex($just:center, $dir: row, $align: center);
+                padding: 10px;
+                height: 50vh;
+                background-color: $primaryColor;
+                color: $secondaryColor;
+            }  
+        }
+        p, h1, h2{
+        color: $primaryColor;
+        }
+        
+    }
 }
+
+
+
