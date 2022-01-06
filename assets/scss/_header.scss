@@ -1,11 +1,9 @@
 header {
-    background-image: url(../img/bg_img3.jpg);
-    background-size: cover;
-    height: 60vh;
-    width: 100%;
-    position: relative;
+    // position: relative;
     font-weight: bolder;
     #desktopNavbar{
+        position: relative;
+        z-index: 3;
         @include flex ($just:space-between, $dir: row, $align: center);
         padding: 5px 30px;
         font-family: overpass;
@@ -24,10 +22,44 @@ header {
         .socialNetworks{
             i{
                 padding: 0 5px;
-                color: $primaryColor;
+                color: $thirdColor;
                 cursor: pointer;
             }
         }
+    }
+// --------CAROUSSEL--------------------------
+    *{box-sizing: border-box;}
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background-color: #cdcdcd;
+      .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        &.active {
+          left: 0;
+          transition: all 0.3s ease-out;
+        }
+        div {height: 100%;}
+        .image1 {
+            background-image: url(/assets/img/img1.jpg);
+            background-size: cover;
+            // background-repeat: no-repeat;
+        }
+        .image2 {
+          background-image: url(/assets/img/bg_img2.jpg);
+          background-size: cover;
+    }
+        .image3 {
+          background-image: url(/assets/img/bg_img3.jpg);
+          background-size: cover;
+        }
+      }
     }
 }
 

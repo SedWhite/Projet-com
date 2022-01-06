@@ -9,7 +9,7 @@
     #mobileNavbar{
         @include flex ($just:space-around, $dir: row, $align: center);
     }
-    #desktopNavbar{
+    .carousel{
         display: none;
         visibility: hidden;
     }
