@@ -118,16 +118,15 @@ header .carousel .carousel-item .image3 {
 
 #dropdown {
   position: absolute;
-  z-index: 98;
-  top: 15vh;
+  z-index: 100;
+  top: 10vh;
   right: 0;
   width: 100%;
-  padding-right: 150px;
+  padding-right: 180px;
   font-family: overpass;
   font-size: 1.5em;
   text-align: right;
   color: black;
-  background-color: #FFFFFF;
   animation-name: dropdownAnim;
   animation-duration: 0.5s;
 }
@@ -137,21 +136,19 @@ header .carousel .carousel-item .image3 {
 
 @keyframes dropdownAnim {
   from {
-    height: 0px;
+    filter: blur(4px);
   }
   to {
-    height: 120px;
+    filter: blur(0);
   }
 }
 .memberMobileDropdown {
   position: absolute;
   width: 100%;
-  top: 10vh;
-  padding-right: 150px;
+  top: 1vh;
+  padding-right: 20px;
   animation-name: dropdownAnim;
   animation-duration: 0.5s;
-  color: black;
-  background-color: #FFFFFF;
 }
 
 .memberDropdown {
