@@ -15,7 +15,7 @@
         <!-- DESKTOP -->
         <nav id="desktopNavbar">
             <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
-            <ul>
+            <ul class="navbar">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li id="desktopMember">Membres
@@ -33,12 +33,19 @@
                 <i class="fab fa-instagram"></i>
             </div>
         </nav>
-        <div id="menuBurger" class="displayNone">
-            &#x2630
-        </div>
         <!-- MOBILE -->
+        <nav id="mobileNavbar">
+            <div class="socialNetworks">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="menuBurger">
+                &#x2630
+            </div>
+        </nav>
         <nav id="dropdown" class="displayNone">
-            <ul>
+            <ul class="navbarMobile">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li id="mobileMember">Membres
@@ -51,6 +58,9 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="mobileHeader">
+            <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
+        </div>
     </header>
 
     <main>

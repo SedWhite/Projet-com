@@ -6,15 +6,29 @@
 // }
 
 @media screen and (max-width: 1024px){
-    #menuBurger{
-        display: block;
+    #mobileNavbar{
+        @include flex ($just:space-around, $dir: row, $align: center);
     }
     #desktopNavbar{
         display: none;
         visibility: hidden;
     }
-    header{
+    #mobileHeader{
+        display: block;
+        height: 40vh;
         background-image: url(../img/bg_img_mobile.png);
         background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        img{
+            position: absolute;
+            left: calc(50% - 50px);
+            bottom: 50%;
+            width: 100px;
+        }
+    }
+    header{
+        background-image: none;
     }
 }
