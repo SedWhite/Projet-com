@@ -75,15 +75,15 @@ header .carousel .carousel-item div {
   height: 100%;
 }
 header .carousel .carousel-item .image1 {
-  background-image: url(/assets/img/img1.jpg);
+  background-image: url(../img/img1.jpg);
   background-size: cover;
 }
 header .carousel .carousel-item .image2 {
-  background-image: url(/assets/img/bg_img2.jpg);
+  background-image: url(../img/bg_img2.jpg);
   background-size: cover;
 }
 header .carousel .carousel-item .image3 {
-  background-image: url(/assets/img/bg_img3.jpg);
+  background-image: url(../img/bg_img3.jpg);
   background-size: cover;
 }
 

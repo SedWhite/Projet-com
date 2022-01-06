@@ -50,16 +50,16 @@ header {
         }
         div {height: 100%;}
         .image1 {
-            background-image: url(/assets/img/img1.jpg);
+            background-image: url(../img/img1.jpg);
             background-size: cover;
             // background-repeat: no-repeat;
         }
         .image2 {
-          background-image: url(/assets/img/bg_img2.jpg);
+          background-image: url(../img/bg_img2.jpg);
           background-size: cover;
     }
         .image3 {
-          background-image: url(/assets/img/bg_img3.jpg);
+          background-image: url(../img/bg_img3.jpg);
           background-size: cover;
         }
       }
