@@ -1,7 +1,3 @@
-#introGallery{
-    margin: 5%;
-}
-
 #galleryItself{
     @include flex ($just:space-around, $dir: row, $align: center);
     flex-wrap: wrap;

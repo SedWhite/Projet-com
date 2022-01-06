@@ -1,0 +1,50 @@
+#introContact{
+    margin: 2%;
+    h1{
+        margin: 2% 5%;
+    }
+    .contactHeader{
+        @include flex ($just:space-around, $dir: row, $align: center);
+        .contactAddress{
+            text-align: center;
+            font-weight: lighter;
+            font-size: 24px;
+            color: $thirdColor;
+            background-color: $fourthColor;
+            padding: 5%;
+        }
+    }
+}
+
+#formContact{
+    position: relative;
+    margin: 5%;
+    color: $thirdColor;
+    background-color: $fourthColor;
+    font-size: 24px;
+    height: 100vh;
+    .button{
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    form{
+        padding-left: 10%;
+        @include flex ($just:center, $dir: column, $align: flex-start);
+        .labelandInput{
+            @include flex ($just:center, $dir: column, $align: flex-start);
+            padding-top: 50px;
+            input, textarea{
+                width: 1000px;
+                height: 60px;
+                font-size: 24px;
+            }
+            textarea{
+                height: 200px;
+                max-width: 1000px;
+                max-height: 200px;
+            }
+        }
+    }
+}
