@@ -1,48 +1,106 @@
 header {
-    background-image: url(../img/bg_img3.jpg);
-    background-size: cover;
-    height: 60vh;
-    width: 100%;
-    position: relative;
+    // position: relative;
     font-weight: bolder;
     #desktopNavbar{
+        position: relative;
+        z-index: 3;
         @include flex ($just:space-between, $dir: row, $align: center);
         padding: 5px 30px;
         font-family: overpass;
+        color: $primaryColor;
         font-size: 1.5em;
         img{
             width: 80px;
         }
-        ul {
+        .navbar {
             @include flex ($just:space-around, $dir: row, $align: center);
         }
 
-        ul>li {
+        .navbar>li {
             padding: 35px 25px;
         }
         .socialNetworks{
             i{
                 padding: 0 5px;
-                color: $primaryColor;
+                color: $thirdColor;
                 cursor: pointer;
             }
         }
     }
+// --------CAROUSSEL--------------------------
+    *{box-sizing: border-box;}
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      background-color: #cdcdcd;
+      .carousel-item {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 100%;
+        &.active {
+          left: 0;
+          transition: all 0.3s ease-out;
+        }
+        div {height: 100%;}
+        .image1 {
+            background-image: url(/assets/img/img1.jpg);
+            background-size: cover;
+            // background-repeat: no-repeat;
+        }
+        .image2 {
+          background-image: url(/assets/img/bg_img2.jpg);
+          background-size: cover;
+    }
+        .image3 {
+          background-image: url(/assets/img/bg_img3.jpg);
+          background-size: cover;
+        }
+      }
+    }
 }
-#menuBurger{
+
+
+// DROPDOWN DU MENU BURGER LORSQUE VISIBLE
+#mobileNavbar{
+    display : none;
     position: absolute;
-    right : 20px;
-    top : 40px;
-    font-size: 2em;
+    top: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: #F5F5F5;
+    font-size: 1.5em;
+    padding: 2px 30px;
+    .socialNetworks{
+        i{
+            padding: 0 5px;
+            color: $secondaryColor;
+            cursor: pointer;
+        }
+        #menuBurger{
+            padding: 0 5px;
+            font-size: 2em;
+        }
+    }
+}
+
+#menuBurger:hover{
     cursor: pointer;
 }
 
-// DROPDOWN DU MENU BURGER LORSQUE VISIBLE
+#mobileHeader{
+    display: none;
+}
+
 #dropdown{
     padding-right: 20px;
     font-family: overpass;
     font-size: 1.5em;
     text-align: right;
+    color: $secondaryColor;
     background-color: $primaryColor;
     animation-name: "dropdownAnim";
     animation-duration: 0.5s;
@@ -61,7 +119,9 @@ header {
 }
 
 // DROPDOWN DES NOMS DES MEMBRES
-
+.memberMobileDropdown, .memberDropdown{
+    position: absolute;
+}
 .displayNone{
     display: none;
 }

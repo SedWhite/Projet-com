@@ -15,7 +15,7 @@
         <!-- DESKTOP -->
         <nav id="desktopNavbar">
             <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
-            <ul>
+            <ul class="navbar">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li id="desktopMember">Membres
@@ -33,12 +33,19 @@
                 <i class="fab fa-instagram"></i>
             </div>
         </nav>
-        <div id="menuBurger" class="displayNone">
-            &#x2630
-        </div>
         <!-- MOBILE -->
+        <nav id="mobileNavbar">
+            <div class="socialNetworks">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="menuBurger">
+                &#x2630
+            </div>
+        </nav>
         <nav id="dropdown" class="displayNone">
-            <ul>
+            <ul class="navbarMobile">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li id="mobileMember">Membres
@@ -51,32 +58,70 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <div id="mobileHeader">
+            <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
+        </div>
     </header>
 
     <main>
         <section id="introGallery">
-            <h1>Galerie</h1>
-            <p></p>
+            <h1>Notre galerie</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit aut aliquam molestiae, unde fugit reprehenderit officia optio vel nihil, dolor esse totam magni corrupti placeat quaerat a mollitia quos reiciendis.</p>
         </section>
         <section id="galleryItself">
-            <div class="boxSizing">
-                <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie">
-            </div>
-            <div class="boxSizing">
-                <img src="" alt="">
-            </div>
-            <div class="boxSizing">
-                <img src="" alt="">
-            </div>
-            <div class="boxSizing">
-                <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest">
-            </div>
-            <div class="boxSizing">
-                <img src="" alt="">
-            </div>
-            <div class="boxSizing">
-                <img src="assets/img/la_frite.png" alt="Maquette du site La Frite">
-            </div>
+            <article>
+                <div id="firstModal" class="boxSizing">
+                    <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="assets/img/f_plomberie.png" alt="Maquette du site François Plomberie" class="modal-content" onclick="getImg('firstModal')">
+                </div>
+            </article>
+
+            <article>
+                <div id="secondModal" class="boxSizing">
+                    <img src="" alt="" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="" alt="" class="modal-content" onclick="getImg('secondModal')">
+                </div>
+            </article>
+
+            <article>
+                <div id="thirdModal" class="boxSizing">
+                    <img src="" alt="" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="" alt="" class="modal-content" onclick="getImg('thirdModal')">
+                </div>
+            </article>
+
+            <article>
+                <div id="fourthModal" class="boxSizing">
+                    <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="assets/img/n_genest.png" alt="Maquette du site Nathalie Genest" class="modal-content" onclick="getImg('fourthModal')">
+                </div>
+            </article>
+
+            <article>
+                <div id="fifthModal" class="boxSizing">
+                    <img src="" alt="" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="" alt="" class="modal-content" onclick="getImg('fifthModal')">
+                </div>
+            </article>
+
+            <article>
+                <div id="sixthModal" class="boxSizing">
+                    <img src="assets/img/la_frite.png" alt="Maquette du site La Frite" onclick="getImg('close')">
+                </div>
+                <div class="miniature">
+                    <img src="assets/img/la_frite.png" alt="Maquette du site La Frite" class="modal-content" onclick="getImg('sixthModal')">
+                </div>
+            </article>
         </section>
     </main>
 
@@ -104,5 +149,7 @@
             <div class="barre"></div>
         </section>   
     </footer>
+    <script src="assets/js/menuburger.js"></script> 
+    <script src="assets/js/modals.js"></script>
 </body>
 </html>
