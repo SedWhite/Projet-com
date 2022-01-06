@@ -1,7 +1,7 @@
 // MODALS POUR LA GALLERIE
 function getImg(modal){ //modal sert à lier avec les onclick sur les img
     let goodModal = document.getElementById(modal);
-    let getModals = document.querySelectorAll(".modal"); 
+    let getModals = document.querySelectorAll(".boxSizing"); 
     /*^^^^^^^ Cela crée un tableau des .modal*/
     let modalsLength = getModals.length;
   
