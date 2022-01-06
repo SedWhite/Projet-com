@@ -191,33 +191,75 @@ p {
   background-color: black;
 }
 
-#presentation, #caroussel, #gallerie, #about {
-  margin: 2%;
-}
-
 #mainIndex h1 {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px 0;
 }
-
-#presentation .indexLogo {
+#mainIndex #presentation {
+  margin: 2%;
+}
+#mainIndex #presentation .indexLogo {
   margin: 50px auto;
   text-align: center;
 }
-#presentation .indexLogo img {
+#mainIndex #presentation .indexLogo img {
   width: 20%;
 }
-#presentation .indexLogo .afterLogo {
+#mainIndex #presentation .indexLogo .afterLogo {
   font-family: overpass;
   font-size: 18px;
 }
-
-.darkBackground {
+#mainIndex .darkBackground {
+  padding: 2%;
   margin: 0;
   background-color: #303037;
 }
-.darkBackground p, .darkBackground h1, .darkBackground h2 {
-  color: #FFFFFF;
+#mainIndex .darkBackground #memberCaroussel {
+  width: 75%;
+}
+#mainIndex .darkBackground #memberCaroussel article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+  margin: 2%;
+  height: 20vh;
+  background-color: #FFFFFF;
+  position: relative;
+}
+#mainIndex .darkBackground #memberCaroussel article h2, #mainIndex .darkBackground #memberCaroussel article p {
+  color: black;
+}
+#mainIndex .darkBackground #memberCaroussel article .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#mainIndex #indexReviews {
+  margin: 2%;
+}
+#mainIndex #indexReviews .reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+#mainIndex #indexReviews .reviews article {
+  border: 1px solid black;
+}
+#mainIndex #indexGallerie {
+  margin: 2%;
+}
+#mainIndex #indexGallerie #realisation {
+  position: relative;
+}
+#mainIndex #indexGallerie #realisation .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #galleryItself {
@@ -262,6 +304,66 @@ p {
 #galleryItself .modal-content {
   margin: auto;
   display: block;
+}
+
+#introContact {
+  margin: 2%;
+}
+#introContact h1 {
+  margin: 2% 5%;
+}
+#introContact .contactHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#introContact .contactHeader .contactAddress {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 24px;
+  color: #67F7F0;
+  background-color: #303037;
+  padding: 5%;
+}
+
+#formContact {
+  position: relative;
+  margin: 5%;
+  color: #67F7F0;
+  background-color: #303037;
+  font-size: 24px;
+  height: 100vh;
+}
+#formContact .button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#formContact form {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+#formContact form .labelandInput {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#formContact form .labelandInput input, #formContact form .labelandInput textarea {
+  width: 1000px;
+  height: 60px;
+  font-size: 24px;
+}
+#formContact form .labelandInput textarea {
+  height: 200px;
+  max-width: 1000px;
+  max-height: 200px;
 }
 
 @media screen and (max-width: 1024px) {

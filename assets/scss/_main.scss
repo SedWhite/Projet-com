@@ -38,8 +38,3 @@ p{
 .button{
     @include button;
 }
-
-// SECTIONS
-#presentation, #caroussel, #gallerie, #about {
-    margin: 2%;
-}

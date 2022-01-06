@@ -4,6 +4,7 @@
         margin: 20px 0;
     }
     #presentation{
+        margin: 2%;
         .indexLogo{
             margin: 50px auto;
             text-align: center;
@@ -20,19 +21,47 @@
         padding: 2%;
         margin: 0;
         background-color: $fourthColor;
-        section{
+        #memberCaroussel{
+            width: 75%;
             article{
                 @include flex($just:center, $dir: row, $align: center);
                 padding: 10px;
-                height: 50vh;
+                margin: 2%;
+                height: 20vh;
                 background-color: $primaryColor;
-                color: $secondaryColor;
+                position: relative;
+                h2, p{
+                    color: $secondaryColor;
+                }
+                .button{
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }  
+        }  
+    }
+    #indexReviews{
+        margin: 2%;
+        .reviews{
+            @include flex($just:center, $dir: row, $align: center);
+            article{
+                border: 1px solid $secondaryColor;
+            }
         }
-        p, h1, h2{
-        color: $primaryColor;
+    }
+    #indexGallerie{
+        margin: 2%;
+        #realisation{
+            position:relative;
+            .button{
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
         }
-        
     }
 }
 
