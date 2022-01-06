@@ -16,6 +16,12 @@ a{
 h1{
     font-family: poiret;
     font-size: 2.5em;
+    margin: 20px 0;
+}
+h1::after{
+    width: 100px;
+    height: 2px;
+    background-color: $thirdColor;
 }
 
 h2{
