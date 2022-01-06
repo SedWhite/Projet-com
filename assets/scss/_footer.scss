@@ -1,9 +1,34 @@
+*{
+    color: $thirdColor;
+}
+
 footer {
+    position: relative;
+
+    .barre {
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background-color: $thirdColor;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+#foot {
+    @include flex(space-between, row, center);
     background-color: grey;
     width: 100%;
     height: 150px;
 
     div {
-        @include flex();
+        margin: 10px;
+    }
+
+    .contact {
+        @include flex(row,center)
     }
 }
+
+
+
