@@ -50,16 +50,16 @@ header {
         }
         div {height: 100%;}
         .image1 {
-            background-image: url(/assets/img/img1.jpg);
+            background-image: url(../img/img1.jpg);
             background-size: cover;
             // background-repeat: no-repeat;
         }
         .image2 {
-          background-image: url(/assets/img/bg_img2.jpg);
+          background-image: url(../img/bg_img2.jpg);
           background-size: cover;
     }
         .image3 {
-          background-image: url(/assets/img/bg_img3.jpg);
+          background-image: url(../img/bg_img3.jpg);
           background-size: cover;
         }
       }
@@ -71,6 +71,7 @@ header {
 #mobileNavbar{
     display : none;
     position: absolute;
+    z-index: 99;
     top: 0;
     width: 100%;
     height: 15vh;
@@ -99,13 +100,17 @@ header {
 }
 
 #dropdown{
-    padding-right: 20px;
+    position: absolute;
+    z-index: 100;
+    top: 10vh;
+    right:0;
+    width: 100%;
+    padding-right: 180px;
     font-family: overpass;
     font-size: 1.5em;
     text-align: right;
     color: $secondaryColor;
-    background-color: $primaryColor;
-    animation-name: "dropdownAnim";
+    animation-name: dropdownAnim;
     animation-duration: 0.5s;
     a{
         color: $secondaryColor;
@@ -114,16 +119,25 @@ header {
 
 @keyframes dropdownAnim{
     from{
-        height: 0px;
+        filter: blur(4px);
     }
     to {
-        height: 120px;
+        filter: blur(0);
     }
 }
 
 // DROPDOWN DES NOMS DES MEMBRES
-.memberMobileDropdown, .memberDropdown{
+.memberMobileDropdown{
     position: absolute;
+    width: 100%;
+    top: 1vh;
+    padding-right: 20px;
+    animation-name: dropdownAnim;
+    animation-duration: 0.5s;
+}
+.memberDropdown{
+    position: absolute;
+    top: 10vh;
 }
 .displayNone{
     display: none;

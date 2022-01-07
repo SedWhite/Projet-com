@@ -75,21 +75,22 @@ header .carousel .carousel-item div {
   height: 100%;
 }
 header .carousel .carousel-item .image1 {
-  background-image: url(/assets/img/img1.jpg);
+  background-image: url(../img/img1.jpg);
   background-size: cover;
 }
 header .carousel .carousel-item .image2 {
-  background-image: url(/assets/img/bg_img2.jpg);
+  background-image: url(../img/bg_img2.jpg);
   background-size: cover;
 }
 header .carousel .carousel-item .image3 {
-  background-image: url(/assets/img/bg_img3.jpg);
+  background-image: url(../img/bg_img3.jpg);
   background-size: cover;
 }
 
 #mobileNavbar {
   display: none;
   position: absolute;
+  z-index: 99;
   top: 0;
   width: 100%;
   height: 15vh;
@@ -116,13 +117,17 @@ header .carousel .carousel-item .image3 {
 }
 
 #dropdown {
-  padding-right: 20px;
+  position: absolute;
+  z-index: 100;
+  top: 10vh;
+  right: 0;
+  width: 100%;
+  padding-right: 180px;
   font-family: overpass;
   font-size: 1.5em;
   text-align: right;
   color: black;
-  background-color: #FFFFFF;
-  animation-name: "dropdownAnim";
+  animation-name: dropdownAnim;
   animation-duration: 0.5s;
 }
 #dropdown a {
@@ -131,14 +136,24 @@ header .carousel .carousel-item .image3 {
 
 @keyframes dropdownAnim {
   from {
-    height: 0px;
+    filter: blur(4px);
   }
   to {
-    height: 120px;
+    filter: blur(0);
   }
 }
-.memberMobileDropdown, .memberDropdown {
+.memberMobileDropdown {
   position: absolute;
+  width: 100%;
+  top: 1vh;
+  padding-right: 20px;
+  animation-name: dropdownAnim;
+  animation-duration: 0.5s;
+}
+
+.memberDropdown {
+  position: absolute;
+  top: 10vh;
 }
 
 .displayNone {
@@ -644,6 +659,7 @@ footer .barre {
 
   #mobileHeader {
     display: block;
+    margin-top: 15vh;
     height: 40vh;
     background-image: url(../img/bg_img_mobile.png);
     background-position: top;
