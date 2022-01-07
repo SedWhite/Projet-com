@@ -17,15 +17,21 @@ footer {
     background-color: $fourthColor;
     width: 100%;
     height: 150px;
-
-    div {
-        margin: 10px;
+    .mentionsLegales{
+        margin-left: 5rem;
     }
 
     .contact {
         @include flex(row,center)
     }
+    .socialNetworks{
+        font-size: 1.5rem;
+        margin-right: 5rem;
+        margin-left: 2rem;
+    }
 }
+
+
 
 
 

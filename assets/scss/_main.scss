@@ -18,11 +18,6 @@ h1{
     font-size: 2.5em;
     margin: 20px 0;
 }
-.blueLine{
-    width: 100px;
-    height: 2px;
-    background-color: $thirdColor;
-}
 
 h2{
     font-family: overpass;
@@ -39,18 +34,6 @@ p{
     @include button;
 }
 
-#gallerie{
-    position: relative;
-    .button{
-        position: absolute;
-        left: 50%;
-        margin-top: 1rem;
-        transform: translateX(-50%);
-    }
-}
-
-
-// CAROUSSELS
 // --------------------------
 // // /* Slideshow container */
 // --------------------------
@@ -127,8 +110,7 @@ p{
 }
 /* Caption text */
 .text {
-  color: black;
-  text-shadow: #67F7F0 1px 0 10px;
+  color: $thirdColor;
   font-size: 15px;
   padding: 8px 12px;
   bottom: 8px;
