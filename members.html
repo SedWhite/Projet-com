@@ -33,9 +33,9 @@
                     <li><a href="galerie.html">Galerie</a></li>
                     <li id="desktopMember">Membres
                         <ul class="memberDropdown displayNone">
-                            <li><a href="members.html">Alexis Doyen</a></li>
-                            <li><a href="members.html">Lucas Edwige</a></li>
-                            <li><a href="members.html">Aloïs Patoor</a></li>
+                            <li><a href="members.html" class="alexis" onclick="getMembersInfo()">Alexis Doyen</a></li>
+                            <li><a href="members.html" class="lucas" onclick="getMembersInfo()">Lucas Edwige</a></li>
+                            <li><a href="members.html" class="alois" onclick="getMembersInfo()">Aloïs Patoor</a></li>
                         </ul>
                     </li>
                     <li><a href="contact.html">Contact</a></li>
@@ -64,9 +64,9 @@
                 <li><a href="galerie.html">Galerie</a></li>
                 <li id="mobileMember">Membres
                     <ul class="memberMobileDropdown displayNone">
-                        <li><a href="members.html">Alexis Doyen</a></li>
-                        <li><a href="members.html">Lucas Edwige</a></li>
-                        <li><a href="members.html">Aloïs Patoor</a></li>
+                        <li><a href="members.html" class="alexis" onclick="getMembersInfo()">Alexis Doyen</a></li>
+                        <li><a href="members.html" class="lucas" onclick="getMembersInfo()">Lucas Edwige</a></li>
+                        <li><a href="members.html" class="alois" onclick="getMembersInfo()">Aloïs Patoor</a></li>
                     </ul>
                 </li>
                 <li><a href="contact.html">Contact</a></li>
@@ -77,17 +77,20 @@
         </div>
     </header>
 
-    <main>
+    <main onload="getMembersInfo()">
         <section>
             <article>
                 <div id="memberPic">
                     <img src="" alt="">
                 </div>
-                <h1 id="memberName">
-                    Jean-Michel Belouga
-                    <div class="blueLine"></div>
-                </h1>
-                <p id="memberText">
+                <h1 id="memberName">Jean-Michel Belouga</h1>
+                <div class="blueLine"></div>
+                <p id="memberText1">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta tempore voluptas dolore ea, eligendi eaque itaque velit commodi, natus blanditiis explicabo illum harum unde ratione odit rerum culpa. Alias.
+                    Blanditiis neque quae porro assumenda quod nesciunt consequatur libero nemo repudiandae ducimus deserunt tempora cumque quos, rerum eos. Dolor voluptatem cupiditate exercitationem assumenda recusandae ipsam quidem doloribus aliquam, sequi nisi!
+                    Delectus reprehenderit sint cumque qui voluptatem similique, magnam vitae quos hic labore eius illum nesciunt odit, eum corrupti quisquam harum eos officiis natus? Mollitia temporibus sunt consequatur saepe, hic id.
+                </p>
+                <p id="memberText2">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta tempore voluptas dolore ea, eligendi eaque itaque velit commodi, natus blanditiis explicabo illum harum unde ratione odit rerum culpa. Alias.
                     Blanditiis neque quae porro assumenda quod nesciunt consequatur libero nemo repudiandae ducimus deserunt tempora cumque quos, rerum eos. Dolor voluptatem cupiditate exercitationem assumenda recusandae ipsam quidem doloribus aliquam, sequi nisi!
                     Delectus reprehenderit sint cumque qui voluptatem similique, magnam vitae quos hic labore eius illum nesciunt odit, eum corrupti quisquam harum eos officiis natus? Mollitia temporibus sunt consequatur saepe, hic id.
@@ -98,6 +101,11 @@
                     Ab eaque eum, vitae magnam nam id quia excepturi reiciendis fuga eligendi officia deserunt, ducimus delectus assumenda laudantium odio eius, repellat molestiae. Maiores ipsum quod accusamus obcaecati reprehenderit, esse est.
                     Nesciunt consequatur error quia recusandae, unde porro cum earum facere fugiat hic saepe nostrum adipisci quam est dicta ut odit explicabo repellat id ipsum reiciendis animi optio aut libero. Repudiandae.
                     Adipisci eos assumenda, unde excepturi aut tempora temporibus autem. Architecto, aliquam? Ea maxime recusandae aspernatur ad laborum voluptate placeat unde? Quia voluptate obcaecati sunt beatae accusantium, aut aliquid ex autem.
+                </p>
+                <p id="memberText3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime soluta tempore voluptas dolore ea, eligendi eaque itaque velit commodi, natus blanditiis explicabo illum harum unde ratione odit rerum culpa. Alias.
+                    Blanditiis neque quae porro assumenda quod nesciunt consequatur libero nemo repudiandae ducimus deserunt tempora cumque quos, rerum eos. Dolor voluptatem cupiditate exercitationem assumenda recusandae ipsam quidem doloribus aliquam, sequi nisi!
+                    Delectus reprehenderit sint cumque qui voluptatem similique, magnam vitae quos hic labore eius illum nesciunt odit, eum corrupti quisquam harum eos officiis natus? Mollitia temporibus sunt consequatur saepe, hic id.
                 </p>
                 <img src="assets/img/img1.jpg" alt="Image d'illustration">
             </article>
@@ -130,5 +138,6 @@
     </footer>
     <script src="assets/js/menuburger.js"></script> 
     <script src="assets/js/sliders.js"></script>
+    <script src="assets/js/members.js"></script>
 </body>
 </html>
