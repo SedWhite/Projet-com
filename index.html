@@ -80,9 +80,8 @@
     <main id="mainIndex">
         <!-------------------- Who are we -------------------->
         <section id="presentation">
-            <h1>L’agence Pericom, c’est qui ?
-                <div class="blueLine"></div>
-            </h1>
+            <h1>L’agence Pericom, c’est qui ?</h1>
+            <div class="blueLine"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio culpa praesentium adipisci incidunt. Non dignissimos at quam possimus libero eveniet fuga, delectus in velit laboriosam, similique ipsa cupiditate, ad asperiores!</p>
             <div class="indexLogo">
             <img src="assets/img/logo_pericom.png" alt="Logo de Péricom">
@@ -93,36 +92,67 @@
 
         <!-------------------- Choose your fighter -------------------->
         <div class="darkBackground">
-            <h1>Choose your fighter
-                <div class="blueLine"></div>
-            </h1>
+            <h1>Choose your fighter</h1>
             <section id="memberCaroussel">
-                <article>
-                    <img src="" alt="">
-                    <h2>Alexis Doyen</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem corporis eaque error cupiditate temporibus quod non natus dolor incidunt? Deleniti vel at quibusdam veritatis in minus quia eum repudiandae.</p>
-                    <a href="members.html" class="button">En Savoir +</a>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <h2>Lucas Edwige</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat tenetur aspernatur et quasi! Quos, aliquam est perferendis, molestiae aperiam ut expedita ex nam blanditiis illum quam soluta numquam laudantium labore.</p>
-                    <a href="members.html" class="button">En Savoir +</a>
-                </article>
-                <article>
-                    <img src="" alt="">
-                    <h2>Aloïs Patoor</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium laboriosam placeat perferendis recusandae inventore. Itaque incidunt, nisi veniam eum consectetur, porro labore nemo ex dolorem voluptates pariatur dignissimos possimus.</p>
-                    <a href="members.html" class="button">En Savoir +</a>
-                </article>
+                <div class="slideshow-container-members">
+                    <article class="membersSlides fade">
+                        <div class="imgSizing">
+                            <img src="" alt="">
+                        </div>
+                        <div class="articleText">
+                            <h2>Alexis Doyen</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolorem corporis eaque error cupiditate temporibus quod non natus dolor incidunt? Deleniti vel at quibusdam veritatis in minus quia eum repudiandae.</p>
+                        </div>
+                        <a href="members.html" class="button">En Savoir +</a>
+                    </article>
+
+                    <article class="membersSlides fade">
+                        <div class="imgSizing">
+                            <img src="" alt="">
+                        </div>
+                        <div class="articleText">
+                            <h2>Lucas Edwige</h2>
+                            <p>Créatif et attentif, Lucas s'occupe de vous accompagner dans la création de
+                                votre univers graphique pour créer le site qui vous convient.
+                                
+                                Offrant aussi son savoir-faire en tant que sous-traitant pour des agences 
+                                digitales et des agences de communication pour des projets spécifiques,
+                                il vous conseillera dans votre stratégie de communication et vous orientera 
+                                vers les meilleurs choix graphiques afin de révéler votre communication sous son 
+                                meilleur angle.
+                                </p>
+                        </div>
+                        <a href="members.html" class="button">En Savoir +</a>
+                    </article>
+
+                    <article class="membersSlides fade">
+                        <div class="imgSizing">
+                            <img src="assets/img/alois.jpg" alt="Photo d'Aloïs Patoor">
+                        </div>
+                        <div class="articleText">
+                            <h2>Aloïs Patoor</h2>
+                            <p>Web designer de l'équipe, il conçoit les maquettes de vos sites internet tout en intégrant l'expériences utilisateur (UX design) au coeur de son travail.
+                            </p>
+                        </div>
+                        <a href="members.html" class="button">En Savoir +</a>
+                    </article>
+
+                    <a class="prevMembers" onclick="plusSlidesMembers(-1)">&#10094;</a>
+                    <a class="nextMembers" onclick="plusSlidesMembers(1)">&#10095;</a>
+
+                    <div style="text-align:center">
+                        <span class="dotMembers" onclick="currentMembersSlide(1)"></span>
+                        <span class="dotMembers" onclick="currentMembersSlide(2)"></span>
+                        <span class="dotMembers" onclick="currentMembersSlide(3)"></span>
+                    </div>
+                </div>
             </section>
         </div>
 
         <!-------------------- Gallerie -------------------->
         <section id="indexGallerie">
-            <h1>Notre galerie
-                <div class="blueLine"></div>
-            </h1>
+            <h1>Notre galerie</h1>
+            <div class="blueLine"></div>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse iure et expedita quas veniam nisi distinctio error ea! Incidunt inventore minima id soluta eaque optio, nesciunt quasi ullam animi unde?</p>
             <article id="realisation">
                 <h2>Nos réalisations</h2>
@@ -133,19 +163,19 @@
                 <!-- Full-width images with number and caption text -->
                 <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
-                <img src="/assets/img/n_genest.png" style="width:100%">
+                <img src="assets/img/n_genest.png" style="width:100%">
                 <div class="text">Nathalie Geneste, Artisan peintre</div>
                 </div>
             
                 <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
-                <img src="/assets/img/Nac.PNG" style="width:100%">
+                <img src="assets/img/Nac.PNG" style="width:100%">
                 <div class="text">PokePet Association, association d'adoption de nac</div>
                 </div>
             
                 <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
-                <img src="/assets/img/f_plomberie.png" style="width:100%">
+                <img src="assets/img/f_plomberie.png" style="width:100%">
                 <div class="text">FrançoisPlomberie, artisan plombier chauffagiste</div>
                 </div>
             
@@ -167,9 +197,8 @@
 
         <!-------------------- Opinions -------------------->
         <section id="indexReviews">
-            <h1>Vos avis
-                <div class="blueLine"></div>
-            </h1>
+            <h1>Vos avis</h1>
+            <div class="blueLine"></div>
             <div class="reviews">
                 <article>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam possimus ipsa voluptas ducimus ipsum autem fugit quibusdam labore, tempore natus voluptatum culpa quaerat eligendi blanditiis, nostrum dolorum, delectus velit beatae.</p>

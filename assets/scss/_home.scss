@@ -3,6 +3,7 @@
         text-align: center;
         margin: 20px 0;
     }
+    // PRESENTATION SECTION
     #presentation{
         margin: 2%;
         .indexLogo{
@@ -17,31 +18,48 @@
             }
         }
     }
+    // MEMBERS SECTION
     .darkBackground{
         padding: 2%;
         margin: 0;
         background-color: $fourthColor;
         #memberCaroussel{
-            width: 75%;
-            article{
-                @include flex($just:center, $dir: row, $align: center);
-                padding: 10px;
-                margin: 2%;
-                height: 20vh;
-                background-color: $primaryColor;
-                position: relative;
-                h2, p{
-                    color: $secondaryColor;
-                }
-                .button{
-                    position: absolute;
-                    bottom: 20px;
-                    left: 50%;
-                    transform: translateX(-50%);
+            width: 100%;
+            .slideshow-container-members{
+                article.membersSlides{
+                    @include flex($just:space-around, $dir: row, $align: center);
+                    padding: 5%;
+                    width: 50vw;
+                    height: 50vh;
+                    margin: 0 auto;
+                    background-color: $primaryColor;
+                    position: relative;
+                    h2, p{
+                        color: $secondaryColor;
+                    }
+                    .imgSizing{
+                        display: inline-block;
+                        width: 75%;
+                        object-fit: cover;
+                        object-position: top;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .articleText{
+                        padding: 2%;
+                    }
+                    .button{
+                        position: absolute;
+                        bottom: 10%;
+                        right: 3%;
+                        transform: translateX(-50%);
+                    }
                 }
             }  
         }  
     }
+    // REVIEWS SECTION
     #indexReviews{
         margin: 2%;
         .reviews{
@@ -51,6 +69,7 @@
             }
         }
     }
+    // GALLERY SECTION
     #indexGallerie{
         margin: 2%;
         #realisation{

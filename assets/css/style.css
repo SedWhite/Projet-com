@@ -229,6 +229,13 @@ p {
   margin: auto;
 }
 
+.slideshow-container-members {
+  position: relative;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  width: 60%;
+}
+
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -250,14 +257,38 @@ p {
   user-select: none;
 }
 
+.prevMembers, .nextMembers {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #67F7F0;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
+.nextMembers {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prevMembers:hover, .nextMembers:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -287,14 +318,29 @@ p {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #303037;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #67F7F0;
+}
+
+.dotMembers {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #303037;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dotMembers:hover {
+  background-color: #67F7F0;
 }
 
 /* Fading animation */
@@ -345,26 +391,39 @@ p {
   background-color: #303037;
 }
 #mainIndex .darkBackground #memberCaroussel {
-  width: 75%;
+  width: 100%;
 }
-#mainIndex .darkBackground #memberCaroussel article {
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 10px;
-  margin: 2%;
-  height: 20vh;
+  padding: 5%;
+  width: 50vw;
+  height: 50vh;
+  margin: 0 auto;
   background-color: #FFFFFF;
   position: relative;
 }
-#mainIndex .darkBackground #memberCaroussel article h2, #mainIndex .darkBackground #memberCaroussel article p {
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides h2, #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides p {
   color: black;
 }
-#mainIndex .darkBackground #memberCaroussel article .button {
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing {
+  display: inline-block;
+  width: 75%;
+  object-fit: cover;
+  object-position: top;
+}
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+  width: 100%;
+}
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .articleText {
+  padding: 2%;
+}
+#mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: 10%;
+  right: 3%;
   transform: translateX(-50%);
 }
 #mainIndex #indexReviews {

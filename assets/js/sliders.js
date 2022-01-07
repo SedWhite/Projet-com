@@ -24,7 +24,6 @@ window.onload = function(){
 }
 
 // CAROUSSEL GALERIE
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -52,6 +51,39 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
+// -----------------------------------------------------------------------------------------------------------------------------
+//CAROUSSEL DES MEMBRES
+let secondSlideIndex = 1;
+showMembersSlides(secondSlideIndex);
+
+// Next/previous controls
+function plusSlidesMembers(m) {
+  showMembersSlides(secondSlideIndex += m);
+}
+
+// Thumbnail image controls
+function currentMembersSlide(m) {
+  showMembersSlides(secondSlideIndex = m);
+}
+
+function showMembersSlides(m) {
+  let j;
+  let membersSlides = document.getElementsByClassName("membersSlides");
+  dots = document.getElementsByClassName("dot");
+
+  if (m > membersSlides.length) {secondSlideIndex = 1}
+  if (m < 1) {secondSlideIndex = membersSlides.length}
+  
+  for (j = 0; j < membersSlides.length; j++) {
+      membersSlides[j].style.display = "none";
+  }
+  for (j = 0; j < dots.length; j++) {
+      dots[j].className = dots[j].className.replace(" active", "");
+  }
+
+  membersSlides[secondSlideIndex-1].style.display = "flex";
+  dots[secondSlideIndex-1].className += " active";
 }
 
 // Fonction automatique
