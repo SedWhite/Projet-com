@@ -233,6 +233,7 @@ p {
   position: relative;
   margin: 0 auto;
   background-color: #FFFFFF;
+  width: 60%;
 }
 
 /* Hide the images by default */
@@ -392,9 +393,6 @@ p {
 #mainIndex .darkBackground #memberCaroussel {
   width: 100%;
 }
-#mainIndex .darkBackground #memberCaroussel .slideshow-container-members {
-  width: 60%;
-}
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides {
   display: flex;
   justify-content: space-around;
@@ -424,8 +422,8 @@ p {
 }
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10%;
+  right: 3%;
   transform: translateX(-50%);
 }
 #mainIndex #indexReviews {

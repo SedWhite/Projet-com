@@ -26,7 +26,6 @@
         #memberCaroussel{
             width: 100%;
             .slideshow-container-members{
-                width: 60%;
                 article.membersSlides{
                     @include flex($just:space-around, $dir: row, $align: center);
                     padding: 5%;
@@ -52,8 +51,8 @@
                     }
                     .button{
                         position: absolute;
-                        bottom: 20px;
-                        right: 20px;
+                        bottom: 10%;
+                        right: 3%;
                         transform: translateX(-50%);
                     }
                 }
