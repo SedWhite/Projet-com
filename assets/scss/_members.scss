@@ -1,0 +1,27 @@
+.member{
+    article{
+        margin: 2% 20%;
+        @include flex($dir: row);
+        .memberIntroduction{
+            padding : 0 2%;
+        }
+    }
+}
+
+#memberPic{
+    width: 30%;
+    object-fit: cover;
+    object-position: top;
+    img{
+        width: 100%;
+    }
+}
+
+#member-illustration{
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+    img{
+        width: 100%;
+    }
+}
