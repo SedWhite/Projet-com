@@ -63,3 +63,12 @@
     height: 322px;
     width: 373px;
 }
+
+@mixin blueLine ($width: 30em) {
+    background-color: $thirdColor;
+    width: $width;
+    height: 2px;
+    margin-bottom: 6%;
+    margin: auto;
+    
+}
