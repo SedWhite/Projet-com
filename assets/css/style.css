@@ -656,7 +656,7 @@ p {
   object-position: top;
 }
 #memberPic img {
-  width: 100%;
+  width: 15em;
 }
 
 #member-illustration {
@@ -665,7 +665,7 @@ p {
   object-position: center;
 }
 #member-illustration img {
-  width: 100%;
+  width: 25em;
 }
 
 footer {
