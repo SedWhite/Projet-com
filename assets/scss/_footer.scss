@@ -2,6 +2,18 @@
 footer {
     position: relative;
     color: $thirdColor;
+    .returnToHeader{
+        position:absolute;
+        padding: 5px 10px;
+        top: -75px;
+        right: 10px;
+        background-color: $fourthColor;
+        font-size: 2.5em;
+        a{
+            color : $thirdColor;
+        }
+       
+    }
     .barre {
         position: absolute;
         height: 100%;

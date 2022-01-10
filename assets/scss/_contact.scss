@@ -3,8 +3,15 @@
     h1{
         margin: 2% 5%;
     }
+    .blueLine{
+        @include blueLine($width:5em);
+        margin: 1rem 0 2rem;
+    }
     .contactHeader{
-        @include flex ($just:space-around, $dir: row, $align: center);
+        @include flex ($just:space-evenly, $dir: row, $align: center);
+        iframe{
+            width: 40rem;
+        }
         .contactAddress{
             text-align: center;
             font-weight: lighter;
@@ -22,7 +29,7 @@
     color: $thirdColor;
     background-color: $fourthColor;
     font-size: 24px;
-    height: 100vh;
+    height: 130vh;
     .button{
         position: absolute;
         bottom: 10%;
@@ -30,19 +37,21 @@
         transform:translateX(-50%);
     }
     form{
+        width: 100%;
         padding-left: 10%;
-        @include flex ($just:center, $dir: column, $align: flex-start);
+        @include flex ($just:center, $dir: column, $align: stretch);
         .labelandInput{
             @include flex ($just:center, $dir: column, $align: flex-start);
             padding-top: 50px;
             input, textarea{
-                width: 1000px;
+                font-family: numans;
+                width: 70%;
                 height: 60px;
                 font-size: 24px;
             }
             textarea{
                 height: 200px;
-                max-width: 1000px;
+                max-width: 70%;
                 max-height: 200px;
             }
         }
