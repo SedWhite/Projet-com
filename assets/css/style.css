@@ -42,6 +42,9 @@ header #desktopNavbar .navbar {
 header #desktopNavbar .navbar a:hover {
   color: #67F7F0;
 }
+header #desktopNavbar .navbar #desktopMember > a {
+  cursor: crosshair;
+}
 header #desktopNavbar .navbar > li {
   padding: 35px 25px;
 }
@@ -129,6 +132,8 @@ header .carousel .carousel-item .image3 {
   color: black;
   animation-name: dropdownAnim;
   animation-duration: 0.5s;
+  background-color: #F5F5F5;
+  opacity: 0.9;
 }
 #dropdown a {
   color: black;
@@ -426,7 +431,7 @@ p {
   object-position: top;
 }
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
-  width: 100%;
+  width: 12rem;
 }
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .articleText {
   padding: 2%;
@@ -654,7 +659,7 @@ p {
   align-items: center;
   flex-direction: row;
 }
-.member article .memberIntroduction {
+.member article .memberDescription {
   padding: 0 2%;
 }
 
@@ -664,7 +669,7 @@ p {
   object-position: top;
 }
 #memberPic img {
-  width: 100%;
+  width: 15em;
 }
 
 #member-illustration {
@@ -673,7 +678,7 @@ p {
   object-position: center;
 }
 #member-illustration img {
-  width: 100%;
+  width: 25em;
 }
 
 footer {
@@ -724,6 +729,36 @@ footer .barre {
   margin-left: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .member article {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+
+  #memberPic {
+    width: 30%;
+    object-fit: cover;
+    object-position: top;
+  }
+  #memberPic img {
+    width: 15em;
+  }
+
+  #member-illustration {
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+  #member-illustration img {
+    width: 25em;
+  }
+}
 @media screen and (max-width: 950px) {
   #foot .mentionsLegales {
     margin-left: 1rem;
@@ -732,17 +767,6 @@ footer .barre {
     font-size: 1.5rem;
     margin-right: 1rem;
     margin-left: 2rem;
-  }
-}
-@media screen and (max-width: 630px) {
-  footer {
-    font-size: 0.8rem;
-  }
-  footer .barre {
-    display: none;
-  }
-  footer #foot .socialNetworks {
-    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -823,6 +847,163 @@ footer .barre {
     font-size: 2em;
     text-align: center;
     margin: 2rem 0rem 1rem;
+  }
+
+  .member article {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member .memberIntroduction #memberPic {
+    width: 40em;
+    object-fit: cover;
+    object-position: top;
+  }
+  .member .memberIntroduction #memberPic img {
+    width: 100%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #memberCaroussel {
+    width: 100%;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides h2, #memberCaroussel .slideshow-container-members article.membersSlides p {
+    color: black;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing {
+    display: inline-block;
+    width: 75%;
+    object-fit: cover;
+    object-position: top;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+    width: 12rem;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .articleText {
+    padding: 2%;
+    margin-left: 1rem;
+    margin-bottom: 3.5rem;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .articleText p {
+    font-size: small;
+    line-height: normal;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    font-size: 12px;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    transform: translateX(-50%);
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    position: absolute;
+    bottom: 4%;
+    right: -15%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 50vw;
+    height: 67vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: initial;
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    margin: auto;
+  }
+
+  .dotMembers {
+    display: none;
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+    width: 8rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .barre {
+    display: none;
+  }
+  footer #foot .socialNetworks {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .member article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .member .memberIntroduction #memberPic {
+    width: 10em;
+  }
+  .member .memberIntroduction #memberPic img {
+    width: 100%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .member .memberAbilities #member-illustration {
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+  .member .memberAbilities #member-illustration img {
+    width: 90%;
   }
 }
 

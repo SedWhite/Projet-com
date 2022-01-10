@@ -1,3 +1,33 @@
+@media screen and (max-width: 1024px){
+    // -----responsive page member ---------
+    .member{
+        article{
+            margin: 2% 10%;
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+    }
+
+    #memberPic{
+        width: 30%;
+        object-fit: cover;
+        object-position: top;
+        img{
+            width: 15em;
+        }
+    }
+    
+    #member-illustration{
+        width: inherit;
+        object-fit: cover;
+        object-position: center;
+        img{
+            width: 25em;
+        }
+    }
+}
 // -----responsive footer---------
 @media screen and (max-width: 950px){
     #foot {
@@ -13,19 +43,6 @@
     }
 }
 
-@media screen and (max-width: 630px){
-    footer{
-        font-size: 0.8rem;
-        .barre{
-            display: none;
-        }
-        #foot {
-            .socialNetworks{
-                font-size: 1rem;
-            }
-        }
-    }
-}
 // --------------------------------------------
 @media screen and (max-width: 768px){
     h1{
@@ -97,4 +114,226 @@
         text-align: center;
         margin: 2rem 0rem 1rem;
     }
+
+
+    //---------- responsive page members ----------
+    .member{
+        article{
+            margin: 2% 10%;
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+
+        .memberIntroduction{
+
+            // #memberPic{
+            //     width: 30%;
+            //     object-fit: cover;
+            //     object-position: top;
+            //     img{
+            //         width: 15em;
+            //     }
+            // }
+            // .memberDescription {
+            //     width: 100%;
+            //     #memberText1 {
+            //         width: 50%;
+            //     }
+            // }
+            
+            // #member-illustration{
+            //     width: inherit;
+            //     object-fit: cover;
+            //     object-position: center;
+            //     img{
+            //         width: 25em;
+            //     }
+            // }
+
+            @include flex(center, row,center);
+
+            #memberPic{
+                width: 40em;
+                object-fit: cover;
+                object-position: top;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .memberAbilities {
+            @include flex();
+        }
+    }
 }
+
+// -----------------------------------------
+// RESPONSIVE INDEX SLIDER------------------
+// -------------------------------------------
+@media screen and (max-width: 1024px){
+    #memberCaroussel{
+        width: 100%;
+        .slideshow-container-members{
+            article.membersSlides{
+                @include flex($just:space-around, $dir: row, $align: center);
+                padding: 5%;
+                width: 50vw;
+                height: 50vh;
+                margin: 0 auto;
+                background-color: $primaryColor;
+                position: relative;
+                h2, p{
+                    color: $secondaryColor;
+                }
+                .imgSizing{
+                    display: inline-block;
+                    width: 75%;
+                    object-fit: cover;
+                    object-position: top;
+                    img{
+                        width: 12rem;
+                    }
+                }
+                .articleText{
+                    padding: 2%;
+                    margin-left: 1rem;
+                    margin-bottom: 3.5rem;
+                    p{
+                        font-size: small;
+                        line-height: normal;
+                    }
+                }
+                .button{
+                    font-size: 12px;
+                    position: absolute;
+                    bottom: 5%;
+                    right: 3%;
+                    transform: translateX(-50%);
+                }
+            }
+        }  
+    }
+    #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+        position: absolute;
+        bottom: 4%;
+        right: -15%;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 768px){
+    #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 50vw;
+    height: 67vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: initial;
+    }
+    #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+        // position: initial;
+        margin: auto;
+
+    }
+    .dotMembers {
+        display: none;
+    }
+    #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+        width: 8rem;
+    }
+}
+// --------------------------------------------
+
+// --------------------------------------------
+@media screen and (max-width: 630px){
+    footer{
+        font-size: 0.8rem;
+        .barre{
+            display: none;
+        }
+        #foot {
+            .socialNetworks{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+// --------------------------------------------
+@media screen and (max-width: 425px){
+    .member{
+        article{
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+
+        .memberIntroduction{
+
+            // #memberPic{
+            //     width: 30%;
+            //     object-fit: cover;
+            //     object-position: top;
+            //     img{
+            //         width: 15em;
+            //     }
+            // }
+            // .memberDescription {
+            //     width: 100%;
+            //     #memberText1 {
+            //         width: 50%;
+            //     }
+            // }
+            
+            // #member-illustration{
+            //     width: inherit;
+            //     object-fit: cover;
+            //     object-position: center;
+            //     img{
+            //         width: 25em;
+            //     }
+            // }
+
+            @include flex(center, column, center);
+
+            #memberPic{
+                width: 10em;
+                // object-fit: cover;
+                // object-position: top;
+                
+                img{
+                    width: 100%; 
+                }
+            }
+
+          
+        }
+
+        .memberAbilities {
+            @include flex();
+
+            #member-illustration{
+                width: inherit;
+                object-fit: cover;
+                object-position: center;
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
