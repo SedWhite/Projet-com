@@ -70,7 +70,7 @@ function currentMembersSlide(m) {
 function showMembersSlides(m) {
   let j;
   let membersSlides = document.getElementsByClassName("membersSlides");
-  dots = document.getElementsByClassName("dot");
+  dots = document.getElementsByClassName("dotMembers");
 
   if (m > membersSlides.length) {secondSlideIndex = 1}
   if (m < 1) {secondSlideIndex = membersSlides.length}
