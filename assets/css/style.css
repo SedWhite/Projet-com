@@ -600,9 +600,12 @@ p {
 }
 #introContact .contactHeader {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
+}
+#introContact .contactHeader iframe {
+  width: 40rem;
 }
 #introContact .contactHeader .contactAddress {
   text-align: center;
@@ -628,10 +631,11 @@ p {
   transform: translateX(-50%);
 }
 #formContact form {
+  width: 100%;
   padding-left: 10%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   flex-direction: column;
 }
 #formContact form .labelandInput {
@@ -642,13 +646,14 @@ p {
   padding-top: 50px;
 }
 #formContact form .labelandInput input, #formContact form .labelandInput textarea {
-  width: 1000px;
+  font-family: numans;
+  width: 70%;
   height: 60px;
   font-size: 24px;
 }
 #formContact form .labelandInput textarea {
   height: 200px;
-  max-width: 1000px;
+  max-width: 70%;
   max-height: 200px;
 }
 
@@ -758,8 +763,17 @@ footer .barre {
   #member-illustration img {
     width: 25em;
   }
+
+  #introContact .contactHeader iframe {
+    width: 20rem;
+    height: 20em;
+  }
 }
 @media screen and (max-width: 950px) {
+  .returnToHeader {
+    display: none;
+  }
+
   #foot .mentionsLegales {
     margin-left: 1rem;
   }
@@ -797,12 +811,6 @@ footer .barre {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-  }
-  #mobileHeader img {
-    position: absolute;
-    left: calc(50% - 50px);
-    bottom: 50%;
-    width: 100px;
   }
 
   header {
@@ -878,6 +886,27 @@ footer .barre {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  #introContact .contactHeader .contactAddress {
+    font-size: 1em;
+  }
+
+  #formContact form .labelandInput {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  #formContact form .labelandInput input, #formContact form .labelandInput textarea {
+    height: 40px;
+    font-size: 0.8em;
+  }
+  #formContact form .labelandInput textarea {
+    height: 200px;
+    max-width: 70%;
+    max-height: 200px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -967,6 +996,19 @@ footer .barre {
   }
   footer #foot .socialNetworks {
     font-size: 1rem;
+  }
+
+  #introContact .contactHeader iframe {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #formContact {
+    margin: 0;
+  }
+
+  #formContact .button {
+    font-size: 0.8em;
   }
 }
 @media screen and (max-width: 425px) {

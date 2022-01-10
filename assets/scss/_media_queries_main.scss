@@ -27,9 +27,17 @@
             width: 25em;
         }
     }
+    //------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader iframe{
+        width: 20rem;
+        height: 20em;
+    }
 }
 // -----responsive footer---------
 @media screen and (max-width: 950px){
+    .returnToHeader{
+        display:none;
+    }
     #foot {
         .mentionsLegales{
             margin-left: 1rem;
@@ -42,6 +50,7 @@
         }
     }
 }
+
 
 // --------------------------------------------
 @media screen and (max-width: 768px){
@@ -66,12 +75,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        img{
-            position: absolute;
-            left: calc(50% - 50px);
-            bottom: 50%;
-            width: 100px;
-        }
     }
     header{
         background-image: none;
@@ -166,6 +169,27 @@
 
         .memberAbilities {
             @include flex();
+        }
+    }
+    //------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader .contactAddress{
+        font-size: 1em;
+    }
+    #formContact{
+        form{
+            .labelandInput{
+                @include flex ($just:center, $dir: column, $align: flex-start);
+                font-size: 0.8em;
+                input, textarea{
+                    height: 40px;
+                    font-size: 0.8em;
+                }
+                textarea{
+                    height: 200px;
+                    max-width: 70%;
+                    max-height: 200px;
+                }
+            }
         }
     }
 }
@@ -263,6 +287,17 @@
                 font-size: 1rem;
             }
         }
+    }
+    //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
     }
 }
 
