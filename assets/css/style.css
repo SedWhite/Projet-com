@@ -42,6 +42,9 @@ header #desktopNavbar .navbar {
 header #desktopNavbar .navbar a:hover {
   color: #67F7F0;
 }
+header #desktopNavbar .navbar #desktopMember > a {
+  cursor: crosshair;
+}
 header #desktopNavbar .navbar > li {
   padding: 35px 25px;
 }
@@ -129,6 +132,8 @@ header .carousel .carousel-item .image3 {
   color: black;
   animation-name: dropdownAnim;
   animation-duration: 0.5s;
+  background-color: #F5F5F5;
+  opacity: 0.9;
 }
 #dropdown a {
   color: black;
@@ -426,7 +431,7 @@ p {
   object-position: top;
 }
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
-  width: 100%;
+  width: 12rem;
 }
 #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .articleText {
   padding: 2%;
@@ -854,6 +859,84 @@ footer .barre {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #memberCaroussel {
+    width: 100%;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 5%;
+    width: 50vw;
+    height: 50vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: relative;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides h2, #memberCaroussel .slideshow-container-members article.membersSlides p {
+    color: black;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing {
+    display: inline-block;
+    width: 75%;
+    object-fit: cover;
+    object-position: top;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+    width: 12rem;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .articleText {
+    padding: 2%;
+    margin-left: 1rem;
+    margin-bottom: 3.5rem;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .articleText p {
+    font-size: small;
+    line-height: normal;
+  }
+  #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    font-size: 12px;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    transform: translateX(-50%);
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    position: absolute;
+    bottom: 4%;
+    right: -15%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 768px) {
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+    width: 50vw;
+    height: 67vh;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    position: initial;
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .button {
+    margin: auto;
+  }
+
+  .dotMembers {
+    display: none;
+  }
+
+  #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
+    width: 8rem;
   }
 }
 @media screen and (max-width: 630px) {

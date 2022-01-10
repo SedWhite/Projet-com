@@ -17,6 +17,9 @@ header {
             a:hover {
                 color: #67F7F0;
             }
+            #desktopMember>a{
+                cursor: crosshair;
+            }
         }
         .navbar>li {
             padding: 35px 25px;
@@ -111,6 +114,8 @@ header {
     color: $secondaryColor;
     animation-name: dropdownAnim;
     animation-duration: 0.5s;
+    background-color: #F5F5F5;
+    opacity: 0.9;
     a{
         color: $secondaryColor;
     }
