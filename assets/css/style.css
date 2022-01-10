@@ -651,7 +651,7 @@ p {
   align-items: center;
   flex-direction: row;
 }
-.member article .memberIntroduction {
+.member article .memberDescription {
   padding: 0 2%;
 }
 
@@ -661,7 +661,7 @@ p {
   object-position: top;
 }
 #memberPic img {
-  width: 100%;
+  width: 15em;
 }
 
 #member-illustration {
@@ -670,7 +670,7 @@ p {
   object-position: center;
 }
 #member-illustration img {
-  width: 100%;
+  width: 25em;
 }
 
 footer {
@@ -710,6 +710,36 @@ footer .barre {
   margin-left: 2rem;
 }
 
+@media screen and (max-width: 1024px) {
+  .member article {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+
+  #memberPic {
+    width: 30%;
+    object-fit: cover;
+    object-position: top;
+  }
+  #memberPic img {
+    width: 15em;
+  }
+
+  #member-illustration {
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+  #member-illustration img {
+    width: 25em;
+  }
+}
 @media screen and (max-width: 950px) {
   #foot .mentionsLegales {
     margin-left: 1rem;
@@ -718,17 +748,6 @@ footer .barre {
     font-size: 1.5rem;
     margin-right: 1rem;
     margin-left: 2rem;
-  }
-}
-@media screen and (max-width: 630px) {
-  footer {
-    font-size: 0.8rem;
-  }
-  footer .barre {
-    display: none;
-  }
-  footer #foot .socialNetworks {
-    font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -810,6 +829,37 @@ footer .barre {
     text-align: center;
     margin: 2rem 0rem 1rem;
   }
+
+  .member article {
+    margin: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member .memberIntroduction #memberPic {
+    width: 40em;
+    object-fit: cover;
+    object-position: top;
+  }
+  .member .memberIntroduction #memberPic img {
+    width: 100%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1024px) {
   #memberCaroussel {
@@ -887,6 +937,54 @@ footer .barre {
 
   #mainIndex .darkBackground #memberCaroussel .slideshow-container-members article.membersSlides .imgSizing img {
     width: 8rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .barre {
+    display: none;
+  }
+  footer #foot .socialNetworks {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .member article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member article .memberIntroduction {
+    padding: 0 2%;
+  }
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .member .memberIntroduction #memberPic {
+    width: 10em;
+  }
+  .member .memberIntroduction #memberPic img {
+    width: 100%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .member .memberAbilities #member-illustration {
+    width: inherit;
+    object-fit: cover;
+    object-position: center;
+  }
+  .member .memberAbilities #member-illustration img {
+    width: 90%;
   }
 }
 
