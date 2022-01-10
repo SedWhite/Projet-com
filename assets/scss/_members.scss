@@ -2,7 +2,7 @@
     article{
         margin: 2% 20%;
         @include flex($dir: row);
-        .memberIntroduction{
+        .memberDescription{
             padding : 0 2%;
         }
     }
