@@ -585,6 +585,14 @@ p {
 #introContact h1 {
   margin: 2% 5%;
 }
+#introContact .blueLine {
+  background-color: #67F7F0;
+  width: 5em;
+  height: 2px;
+  margin-bottom: 6%;
+  margin: auto;
+  margin: 1rem 0 2rem;
+}
 #introContact .contactHeader {
   display: flex;
   justify-content: space-around;
@@ -606,7 +614,7 @@ p {
   color: #67F7F0;
   background-color: #303037;
   font-size: 24px;
-  height: 100vh;
+  height: 130vh;
 }
 #formContact .button {
   position: absolute;
@@ -670,6 +678,17 @@ p {
 
 footer {
   position: relative;
+  color: #67F7F0;
+}
+footer .returnToHeader {
+  position: absolute;
+  padding: 5px 10px;
+  top: -75px;
+  right: 10px;
+  background-color: #303037;
+  font-size: 2.5em;
+}
+footer .returnToHeader a {
   color: #67F7F0;
 }
 footer .barre {

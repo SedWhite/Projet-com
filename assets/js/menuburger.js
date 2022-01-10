@@ -1,6 +1,6 @@
 // MENU BURGER, BEN OUI C'EST DANS LE TITRE
 let menuBurger = document.getElementById("menuBurger");
-console.log("test");
+// console.log("test");
 menuBurger.addEventListener("click", function(){
     let dropdown = document.getElementById("dropdown");
     dropdown.classList.toggle("displayNone");
@@ -11,7 +11,11 @@ menuBurger.addEventListener("click", function(){
 let member = document.getElementById("desktopMember");
 member.addEventListener("mouseenter", function(){
     let dropdownMember = document.querySelector(".memberDropdown");
-    dropdownMember.classList.toggle("displayNone");
+    dropdownMember.classList.remove("displayNone");
+});
+member.addEventListener("mouseleave", function(){
+    let dropdownMember = document.querySelector(".memberDropdown");
+    dropdownMember.classList.add("displayNone");
 });
 // VERSION MOBILE
 let mobileMember = document.getElementById("mobileMember");

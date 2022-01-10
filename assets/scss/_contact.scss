@@ -3,6 +3,10 @@
     h1{
         margin: 2% 5%;
     }
+    .blueLine{
+        @include blueLine($width:5em);
+        margin: 1rem 0 2rem;
+    }
     .contactHeader{
         @include flex ($just:space-around, $dir: row, $align: center);
         .contactAddress{
@@ -22,7 +26,7 @@
     color: $thirdColor;
     background-color: $fourthColor;
     font-size: 24px;
-    height: 100vh;
+    height: 130vh;
     .button{
         position: absolute;
         bottom: 10%;
