@@ -166,7 +166,7 @@
             }
             .blueLine{
                 position: absolute;
-                @include blueLine($width:25rem);
+                @include blueLine($width:100%);
                 bottom: -30px;
                 left: 0;
             }

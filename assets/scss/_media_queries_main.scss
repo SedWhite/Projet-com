@@ -25,10 +25,6 @@
             img {
                 width: 18em;
             }
-            p {
-                margin: 0% 0% 2% 2%;
-            }
-    
         }
     }
     //------------------RESPONSIVE PAGE CONTACT--------------------------
@@ -98,11 +94,6 @@
         background-image: none;
     }
 
-    #opinion {
-        article >.blueLine{
-            display: none;
-        }
-    }
     #mainIndex{
         #presentation{
             .blueLine{
@@ -361,4 +352,33 @@
             }
         }
     }
+
+    footer{
+        font-size: 0.8rem;
+        .barre{
+            display: none;
+        }
+        #foot {
+            .socialNetworks{
+                font-size: 1rem;
+            }
+        }
+    }
+    // -----responsive page member ---------
+    .member {
+        margin: 2% 20% 0%;
+    }
+        
+    //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
+    }
 }
+

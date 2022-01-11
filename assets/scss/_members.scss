@@ -6,11 +6,9 @@
 
         .memberDescription {
             .blueLine {
-                width: 20em;
+                width: 55%;
                 height: 2px;
                 background-color: $thirdColor;
-                margin-left: 5%;
-                margin-bottom: 5%;
             }
         }
 
@@ -34,9 +32,25 @@
 
         img {
             width: 18em;
+            margin-top: 2em;
+            margin-left: 2em;
         }
-        p {
-            margin: 2% 2% 2% 2%;
+        #memberText3 {
+            margin: 2em;
+        }
+        #member-illustration{
+            .followMe{
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                color: $thirdColor;
+                a{
+                    color: $thirdColor;
+                }
+                p{
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }
