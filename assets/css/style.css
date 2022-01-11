@@ -523,7 +523,7 @@ p {
 #mainIndex #opinion #client article .blueLine {
   position: absolute;
   background-color: #67F7F0;
-  width: 25rem;
+  width: 100%;
   height: 2px;
   margin-bottom: 6%;
   margin: auto;
@@ -806,10 +806,6 @@ footer .barre {
 
   header {
     background-image: none;
-  }
-
-  #opinion article > .blueLine {
-    display: none;
   }
 
   #mainIndex #presentation .blueLine {
