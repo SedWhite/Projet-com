@@ -273,29 +273,9 @@
         }
     }
     // -----responsive page member ---------
-    .member {
-        margin: 2% 20% 0%;
-    }
-        
-    //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
-    #introContact .contactHeader iframe{
-        width: 10rem;
-        height: 10rem;
-    }
-    #formContact{
-        margin:0;
-    }
-    #formContact .button{
-        font-size: 0.8em;
-    }
-}
-
-
-// --------------------------------------------
-@media screen and (max-width: 425px){
     .member{
         article{
-            @include flex($dir: row);
+            @include flex(center, column, center);
             .memberIntroduction{
                 padding : 0 2%;
             }
@@ -330,4 +310,18 @@
     
         }
     }
+        
+    //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
+    }
 }
+
+

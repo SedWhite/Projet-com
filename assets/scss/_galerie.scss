@@ -1,7 +1,13 @@
 #galleryItself{
     @include flex ($just:space-around, $dir: row, $align: center);
     flex-wrap: wrap;
-    margin: 2%;
+    margin:auto;
+    width: 70%;
+
+    article {
+        margin-bottom: 3em;
+    }
+
     .miniature{
         width: 300px;
         height: 300px;

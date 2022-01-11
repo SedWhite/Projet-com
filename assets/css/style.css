@@ -568,7 +568,11 @@ p {
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 2%;
+  margin: auto;
+  width: 70%;
+}
+#galleryItself article {
+  margin-bottom: 3em;
 }
 #galleryItself .miniature {
   width: 300px;
@@ -698,11 +702,9 @@ p {
   flex-direction: row;
 }
 .member .memberIntroduction .memberDescription .blueLine {
-  width: 20em;
+  width: 55%;
   height: 2px;
   background-color: #67F7F0;
-  margin-left: 5%;
-  margin-bottom: 5%;
 }
 .member .memberIntroduction img {
   width: 15em;
@@ -1059,29 +1061,11 @@ footer .barre {
     font-size: 1rem;
   }
 
-  .member {
-    margin: 2% 20% 0%;
-  }
-
-  #introContact .contactHeader iframe {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  #formContact {
-    margin: 0;
-  }
-
-  #formContact .button {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 425px) {
   .member article {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
   }
   .member article .memberIntroduction {
     padding: 0 2%;
@@ -1113,6 +1097,19 @@ footer .barre {
   }
   .member .memberAbilities p {
     margin: 0% 0% 2% 2%;
+  }
+
+  #introContact .contactHeader iframe {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #formContact {
+    margin: 0;
+  }
+
+  #formContact .button {
+    font-size: 0.8em;
   }
 }
 
