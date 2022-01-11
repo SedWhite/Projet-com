@@ -1138,9 +1138,27 @@ footer .barre {
     height: 20em;
   }
 }
+@media screen and (max-height: 850px) {
+  #formContact {
+    height: 130vh;
+  }
+}
 @media screen and (max-width: 768px) {
   #introContact .contactHeader .contactAddress {
     font-size: 1em;
+  }
+
+  #introContact .contactHeader .contactAddress {
+    font-size: 1em;
+  }
+
+  #introContact .contactHeader {
+    flex-direction: column;
+  }
+
+  #introContact .contactHeader #map {
+    width: 100%;
+    height: 20rem;
   }
 
   #formContact form .labelandInput {
