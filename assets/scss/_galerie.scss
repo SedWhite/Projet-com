@@ -1,3 +1,10 @@
+#introGallery{
+    margin: 2% 20%;
+    .blueLine{
+        @include blueLine($width:6em);
+        margin: 0.5rem 0 2rem;
+    }
+}
 #galleryItself{
     @include flex ($just:space-around, $dir: row, $align: center);
     flex-wrap: wrap;
@@ -24,7 +31,7 @@
         position: fixed; /* Reste en place */
         z-index: 100; /* Mis en avant */
         padding-top: 100px; 
-        padding-left: 500px;
+        padding-left: 30%;
         left: 0;
         top: 0;
         width: 100%; /* Full width */

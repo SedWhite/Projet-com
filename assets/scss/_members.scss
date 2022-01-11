@@ -40,3 +40,12 @@
         }
     }
 }
+
+.individualSocialNetworks{
+    margin-left:5%;
+    a{
+        color:$secondaryColor;
+        font-size: 1.5em;
+        align-self: flex-start;
+    }
+}
