@@ -129,6 +129,11 @@
 
 
     //---------- responsive page members ----------
+    .member .memberIntroduction .memberDescription .blueLine {
+        width: 10.5rem;
+        height: 2px;
+        background-color: #67F7F0;
+    }
     .member {
         margin: 2% 20% 0%;
     
@@ -138,6 +143,9 @@
             img {
                 width:15em;
                 border-radius: 7.5em;
+            }
+            h1{
+                font-size: 1.8rem;
             }
             h1,p {
                 margin-left: 5%;

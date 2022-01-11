@@ -568,7 +568,7 @@ p {
 }
 #introGallery .blueLine {
   background-color: #67F7F0;
-  width: 6em;
+  width: 5.6em;
   height: 2px;
   margin-bottom: 6%;
   margin: auto;
@@ -592,6 +592,7 @@ p {
   height: 300px;
   overflow: hidden;
   display: inline-block;
+  box-shadow: 5px 5px 5px #67F7F0;
 }
 #galleryItself .miniature img {
   width: 100%;
@@ -640,7 +641,7 @@ p {
 }
 #introContact .blueLine {
   background-color: #67F7F0;
-  width: 5em;
+  width: 6.3em;
   height: 2px;
   margin-bottom: 6%;
   margin: auto;
@@ -715,7 +716,7 @@ p {
   flex-direction: row;
 }
 .member .memberIntroduction .memberDescription .blueLine {
-  width: 55%;
+  width: 14.5rem;
   height: 2px;
   background-color: #67F7F0;
 }
@@ -955,6 +956,12 @@ footer .barre {
     margin: 2rem 0rem 1rem;
   }
 
+  .member .memberIntroduction .memberDescription .blueLine {
+    width: 10.5rem;
+    height: 2px;
+    background-color: #67F7F0;
+  }
+
   .member {
     margin: 2% 20% 0%;
   }
@@ -967,6 +974,9 @@ footer .barre {
   .member .memberIntroduction img {
     width: 15em;
     border-radius: 7.5em;
+  }
+  .member .memberIntroduction h1 {
+    font-size: 1.8rem;
   }
   .member .memberIntroduction h1, .member .memberIntroduction p {
     margin-left: 5%;
