@@ -1,9 +1,7 @@
 .member {
     margin: 2% 20% 0%;
-
     .memberIntroduction {
         @include flex(center, row, center);
-
         .memberDescription {
             .blueLine {
                 width: 14.5rem;
@@ -11,7 +9,6 @@
                 background-color: $thirdColor;
             }
         }
-
         img {
             width:15em;
             border-radius: 7.5em;
@@ -29,7 +26,6 @@
         @include flex(center, row, flex-start);
         background-color: $fifthColor;
         margin-bottom: 2em;
-
         img {
             width: 18em;
             margin-top: 2em;
@@ -43,23 +39,14 @@
                 text-align: center;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                color: $thirdColor;
+                color: $secondaryColor;
                 a{
-                    color: $thirdColor;
+                    color: $secondaryColor;
                 }
                 p{
                     margin-bottom: 1rem;
                 }
             }
         }
-    }
-}
-
-.individualSocialNetworks{
-    margin-left:5%;
-    a{
-        color:$secondaryColor;
-        font-size: 1.5em;
-        align-self: flex-start;
     }
 }

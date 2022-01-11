@@ -1,0 +1,49 @@
+@media screen and (max-width: 950px){
+    .returnToHeader{
+        display:none;
+    }
+    #foot {
+        .mentionsLegales{
+            margin-left: 1rem;
+        }
+    
+        .socialNetworks{
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-left: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    footer{
+        font-size: 0.8rem;
+        .barre{
+            display: none;
+        }
+        #foot {
+            .socialNetworks{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+// --------------------------------------------
+@media screen and (max-width: 426px){
+
+
+    footer{
+        font-size: 0.8rem;
+        .barre{
+            display: none;
+        }
+        #foot {
+            .socialNetworks{
+                font-size: 1rem;
+            }
+        }
+    }
+}

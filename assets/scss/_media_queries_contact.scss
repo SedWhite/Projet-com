@@ -1,0 +1,62 @@
+@media screen and (max-width: 1024px){
+//------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader iframe{
+        width: 20rem;
+        height: 20em;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+//------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader .contactAddress{
+        font-size: 1em;
+    }
+    #formContact{
+        form{
+            .labelandInput{
+                @include flex ($just:center, $dir: column, $align: flex-start);
+                font-size: 0.8em;
+                input, textarea{
+                    height: 40px;
+                    font-size: 0.8em;
+                }
+                textarea{
+                    height: 200px;
+                    max-width: 70%;
+                    max-height: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px){
+//--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
+    }
+}
+
+
+@media screen and (max-width: 426px){
+//--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
+    }
+}
+
