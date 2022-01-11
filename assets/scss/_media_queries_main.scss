@@ -31,9 +31,17 @@
     
         }
     }
+    //------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader iframe{
+        width: 20rem;
+        height: 20em;
+    }
 }
 // -----responsive footer---------
 @media screen and (max-width: 950px){
+    .returnToHeader{
+        display:none;
+    }
     #foot {
         .mentionsLegales{
             margin-left: 1rem;
@@ -46,6 +54,7 @@
         }
     }
 }
+
 
 // --------------------------------------------
 @media screen and (max-width: 768px){
@@ -70,12 +79,6 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
-        img{
-            position: absolute;
-            left: calc(50% - 50px);
-            bottom: 50%;
-            width: 100px;
-        }
     }
     header{
         background-image: none;
@@ -149,6 +152,27 @@
             }
             p {
                 margin: 0% 0% 2% 2%;
+            }
+        }
+    }
+    //------------------RESPONSIVE PAGE CONTACT--------------------------
+    #introContact .contactHeader .contactAddress{
+        font-size: 1em;
+    }
+    #formContact{
+        form{
+            .labelandInput{
+                @include flex ($just:center, $dir: column, $align: flex-start);
+                font-size: 0.8em;
+                input, textarea{
+                    height: 40px;
+                    font-size: 0.8em;
+                }
+                textarea{
+                    height: 200px;
+                    max-width: 70%;
+                    max-height: 200px;
+                }
             }
         }
     }
@@ -251,8 +275,34 @@
     // -----responsive page member ---------
     .member {
         margin: 2% 20% 0%;
-    
-        .memberIntroduction {
+    }
+        
+    //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
+    #introContact .contactHeader iframe{
+        width: 10rem;
+        height: 10rem;
+    }
+    #formContact{
+        margin:0;
+    }
+    #formContact .button{
+        font-size: 0.8em;
+    }
+}
+
+
+// --------------------------------------------
+@media screen and (max-width: 425px){
+    .member{
+        article{
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+
+        .memberIntroduction{
+
             @include flex(center, column, center);
     
             img {

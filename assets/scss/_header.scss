@@ -1,5 +1,4 @@
 header {
-    // position: relative;
     font-weight: bolder;
     #desktopNavbar{
         position: relative;
@@ -14,14 +13,28 @@ header {
         }
         .navbar {
             @include flex ($just:space-around, $dir: row, $align: center);
-            a:hover {
-                color: #67F7F0;
-            }
-            #desktopMember>a{
+            // ANIMATION LIEN NAVBAR
+            a::after{
+                content: '';
+                    display: block;
+                    position: absolute;
+                    height: 2px;
+                    width: 0;
+                    left: 0;
+                    background-color: $thirdColor;
+                    transition: width 0.3s ease-in-out;
+              } 
+              a::after{
+                bottom: 0;
+              }   
+              a:hover::after{
+                width: 50px;
+              }
+            #desktopMember > a{
                 cursor: crosshair;
             }
         }
-        .navbar>li {
+        .navbar > li {
             padding: 35px 25px;
         }
         .socialNetworks{
@@ -54,7 +67,6 @@ header {
         .image1 {
             background-image: url(../img/img1.jpg);
             background-size: cover;
-            // background-repeat: no-repeat;
         }
         .image2 {
           background-image: url(../img/bg_img2.jpg);
@@ -101,7 +113,7 @@ header {
     display: none;
 }
 
-#dropdown{
+#dropdown{  
     position: absolute;
     z-index: 100;
     top: 10vh;
@@ -146,3 +158,26 @@ header {
 .displayNone{
     display: none;
 }
+
+// ANIMATION NAVBAR
+// #desktopNavbar::before{
+//     transform: scaleX(0);
+//     transform-origin: bottom right;
+// }
+// #desktopNavbar:hover::before {
+// transform: scaleX(1);
+// transform-origin: bottom left;
+// }
+// #desktopNavbar::before {
+// content: " ";
+// display: inline;
+// position: absolute;
+// top: 0; right: 0; bottom: 0; left: 0;
+// inset: 0 0 0 0;
+// background: $secondaryColor;
+// z-index: -1;
+// transition: transform .3s ease;
+// }
+// #desktopNavbar{
+//     position:relative;
+// }

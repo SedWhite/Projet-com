@@ -2,6 +2,23 @@
 footer {
     position: relative;
     color: $thirdColor;
+    .returnToHeader{
+        position:fixed;
+        padding: 5px 20px;
+        top: 550px;
+        right: 10px;
+        z-index: 99;
+        background-color: $fourthColor;
+        border-radius: 30px;
+        font-size: 2.5em;
+        box-shadow: 1px 1px 4px $secondaryColor;
+        animation-name: getHeader;
+        animation-duration: 0.5s;
+        a{
+            color : $thirdColor;
+        }
+       
+    }
     .barre {
         position: absolute;
         height: 100%;
@@ -9,6 +26,15 @@ footer {
         background-color: $thirdColor;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+// ANIMATION APPEARENCE OF THE RETURN-TO-HEADER ARROW
+@keyframes getHeader{
+    from {
+        right: -10px;
+    }
+    to{
+        right: 10px;
     }
 }
 
