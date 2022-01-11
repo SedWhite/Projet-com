@@ -25,10 +25,6 @@
             img {
                 width: 18em;
             }
-            p {
-                margin: 0% 0% 2% 2%;
-            }
-    
         }
     }
     //------------------RESPONSIVE PAGE CONTACT--------------------------
@@ -256,6 +252,44 @@
 
 // --------------------------------------------
 @media screen and (max-width: 630px){
+    .member{
+        article{
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+
+        .memberIntroduction{
+
+            @include flex(center, column, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
+            }
+        }
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+    
+        .memberAbilities {
+            @include flex(center, column, center);
+    
+            // img {
+            //     width: 18em;
+            // }
+            // p {
+            //     margin: 0% 0% 2% 2%;
+            // }
+    
+        }
+    }
+
     footer{
         font-size: 0.8rem;
         .barre{
@@ -285,44 +319,3 @@
     }
 }
 
-
-// --------------------------------------------
-@media screen and (max-width: 425px){
-    .member{
-        article{
-            @include flex($dir: row);
-            .memberIntroduction{
-                padding : 0 2%;
-            }
-        }
-
-        .memberIntroduction{
-
-            @include flex(center, column, center);
-    
-            img {
-                width:15em;
-                border-radius: 7.5em;
-            }
-            h1,p {
-                margin-left: 5%;
-            }
-        }
-    
-        #memberText2 {
-            margin: 5% 0% 5%;
-        }
-    
-        .memberAbilities {
-            @include flex(center, column, center);
-    
-            img {
-                width: 18em;
-            }
-            p {
-                margin: 0% 0% 2% 2%;
-            }
-    
-        }
-    }
-}

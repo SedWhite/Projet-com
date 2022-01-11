@@ -226,6 +226,7 @@ p {
   border: solid black 2px;
   background-color: black;
   transition: all 0.3s ease-in-out;
+  box-shadow: 2px 2px #67F7F0;
 }
 
 .button:hover {
@@ -698,11 +699,9 @@ p {
   flex-direction: row;
 }
 .member .memberIntroduction .memberDescription .blueLine {
-  width: 20em;
+  width: 55%;
   height: 2px;
   background-color: #67F7F0;
-  margin-left: 5%;
-  margin-bottom: 5%;
 }
 .member .memberIntroduction img {
   width: 15em;
@@ -724,9 +723,23 @@ p {
 }
 .member .memberAbilities img {
   width: 18em;
+  margin-top: 2em;
+  margin-left: 2em;
 }
-.member .memberAbilities p {
-  margin: 2% 2% 2% 2%;
+.member .memberAbilities #memberText3 {
+  margin: 2em;
+}
+.member .memberAbilities #member-illustration .followMe {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #67F7F0;
+}
+.member .memberAbilities #member-illustration .followMe a {
+  color: #67F7F0;
+}
+.member .memberAbilities #member-illustration .followMe p {
+  margin-bottom: 1rem;
 }
 
 footer {
@@ -818,9 +831,6 @@ footer .barre {
   }
   .member .memberAbilities img {
     width: 18em;
-  }
-  .member .memberAbilities p {
-    margin: 0% 0% 2% 2%;
   }
 
   #introContact .contactHeader iframe {
@@ -1045,34 +1055,6 @@ footer .barre {
   }
 }
 @media screen and (max-width: 630px) {
-  footer {
-    font-size: 0.8rem;
-  }
-  footer .barre {
-    display: none;
-  }
-  footer #foot .socialNetworks {
-    font-size: 1rem;
-  }
-
-  .member {
-    margin: 2% 20% 0%;
-  }
-
-  #introContact .contactHeader iframe {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  #formContact {
-    margin: 0;
-  }
-
-  #formContact .button {
-    font-size: 0.8em;
-  }
-}
-@media screen and (max-width: 425px) {
   .member article {
     display: flex;
     justify-content: center;
@@ -1104,11 +1086,32 @@ footer .barre {
     align-items: center;
     flex-direction: column;
   }
-  .member .memberAbilities img {
-    width: 18em;
+
+  footer {
+    font-size: 0.8rem;
   }
-  .member .memberAbilities p {
-    margin: 0% 0% 2% 2%;
+  footer .barre {
+    display: none;
+  }
+  footer #foot .socialNetworks {
+    font-size: 1rem;
+  }
+
+  .member {
+    margin: 2% 20% 0%;
+  }
+
+  #introContact .contactHeader iframe {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #formContact {
+    margin: 0;
+  }
+
+  #formContact .button {
+    font-size: 0.8em;
   }
 }
 

@@ -40,6 +40,8 @@ p{
 .button{
     @include button;
     transition: all 0.3s ease-in-out;
+    // border: 1px $thirdColor solid;
+    box-shadow: 2px 2px $thirdColor;
 }
 
 .button:hover{
