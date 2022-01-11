@@ -1,4 +1,13 @@
+#main-gallery{
+    .darkBackground{
+        background-color: $fourthColor;
+        margin-bottom: 2%;
+        padding-top: 5%;
+    }
+}
 #introGallery{
+    background-color: $primaryColor;
+    color: $secondaryColor;
     margin: 2% 20%;
     .blueLine{
         @include blueLine($width:5.6em);

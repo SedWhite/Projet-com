@@ -563,7 +563,15 @@ p {
   left: 0;
 }
 
+#main-gallery .darkBackground {
+  background-color: #303037;
+  margin-bottom: 2%;
+  padding-top: 5%;
+}
+
 #introGallery {
+  background-color: #FFFFFF;
+  color: black;
   margin: 2% 20%;
 }
 #introGallery .blueLine {
@@ -756,22 +764,13 @@ p {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: #67F7F0;
+  color: black;
 }
 .member .memberAbilities #member-illustration .followMe a {
-  color: #67F7F0;
+  color: black;
 }
 .member .memberAbilities #member-illustration .followMe p {
   margin-bottom: 1rem;
-}
-
-.individualSocialNetworks {
-  margin-left: 5%;
-}
-.individualSocialNetworks a {
-  color: black;
-  font-size: 1.5em;
-  align-self: flex-start;
 }
 
 footer {
