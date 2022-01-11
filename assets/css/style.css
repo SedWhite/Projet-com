@@ -644,33 +644,45 @@ p {
   max-height: 200px;
 }
 
-.member article {
-  margin: 2% 20%;
+.member {
+  margin: 2% 20% 0%;
+}
+.member .memberIntroduction {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-.member article .memberDescription {
-  padding: 0 2%;
+.member .memberIntroduction .memberDescription .blueLine {
+  width: 20em;
+  height: 2px;
+  background-color: #67F7F0;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
-
-#memberPic {
-  width: 30%;
-  object-fit: cover;
-  object-position: top;
-}
-#memberPic img {
+.member .memberIntroduction img {
   width: 15em;
+  border-radius: 7.5em;
 }
-
-#member-illustration {
-  width: inherit;
-  object-fit: cover;
-  object-position: center;
+.member .memberIntroduction h1, .member .memberIntroduction p {
+  margin-left: 5%;
 }
-#member-illustration img {
-  width: 25em;
+.member #memberText2 {
+  margin: 5% 0% 5%;
+}
+.member .memberAbilities {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  background-color: #F7FCFB;
+  margin-bottom: 2em;
+}
+.member .memberAbilities img {
+  width: 18em;
+}
+.member .memberAbilities p {
+  margin: 2% 2% 2% 2%;
 }
 
 footer {
@@ -711,33 +723,36 @@ footer .barre {
 }
 
 @media screen and (max-width: 1024px) {
-  .member article {
-    margin: 2% 10%;
+  .member {
+    margin: 2% 20% 0%;
+  }
+  .member .memberIntroduction {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
   }
-  .member article .memberIntroduction {
-    padding: 0 2%;
-  }
-
-  #memberPic {
-    width: 30%;
-    object-fit: cover;
-    object-position: top;
-  }
-  #memberPic img {
+  .member .memberIntroduction img {
     width: 15em;
+    border-radius: 7.5em;
   }
-
-  #member-illustration {
-    width: inherit;
-    object-fit: cover;
-    object-position: center;
+  .member .memberIntroduction h1, .member .memberIntroduction p {
+    margin-left: 5%;
   }
-  #member-illustration img {
-    width: 25em;
+  .member #memberText2 {
+    margin: 5% 0% 5%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .member .memberAbilities img {
+    width: 18em;
+  }
+  .member .memberAbilities p {
+    margin: 0% 0% 2% 2%;
   }
 }
 @media screen and (max-width: 950px) {
@@ -830,15 +845,8 @@ footer .barre {
     margin: 2rem 0rem 1rem;
   }
 
-  .member article {
-    margin: 2% 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .member article .memberIntroduction {
-    padding: 0 2%;
+  .member {
+    margin: 2% 20% 0%;
   }
   .member .memberIntroduction {
     display: flex;
@@ -846,19 +854,28 @@ footer .barre {
     align-items: center;
     flex-direction: row;
   }
-  .member .memberIntroduction #memberPic {
-    width: 40em;
-    object-fit: cover;
-    object-position: top;
+  .member .memberIntroduction img {
+    width: 15em;
+    border-radius: 7.5em;
   }
-  .member .memberIntroduction #memberPic img {
-    width: 100%;
+  .member .memberIntroduction h1, .member .memberIntroduction p {
+    margin-left: 5%;
+  }
+  .member #memberText2 {
+    margin: 5% 0% 5%;
   }
   .member .memberAbilities {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+  }
+  .member .memberAbilities img {
+    width: 25em;
+    padding: 5% 0% 7%;
+  }
+  .member .memberAbilities p {
+    margin: 0% 0% 2% 2%;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -949,16 +966,9 @@ footer .barre {
   footer #foot .socialNetworks {
     font-size: 1rem;
   }
-}
-@media screen and (max-width: 425px) {
-  .member article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .member article .memberIntroduction {
-    padding: 0 2%;
+
+  .member {
+    margin: 2% 20% 0%;
   }
   .member .memberIntroduction {
     display: flex;
@@ -966,11 +976,15 @@ footer .barre {
     align-items: center;
     flex-direction: column;
   }
-  .member .memberIntroduction #memberPic {
-    width: 10em;
+  .member .memberIntroduction img {
+    width: 15em;
+    border-radius: 7.5em;
   }
-  .member .memberIntroduction #memberPic img {
-    width: 100%;
+  .member .memberIntroduction h1, .member .memberIntroduction p {
+    margin-left: 5%;
+  }
+  .member #memberText2 {
+    margin: 5% 0% 5%;
   }
   .member .memberAbilities {
     display: flex;
@@ -978,13 +992,11 @@ footer .barre {
     align-items: center;
     flex-direction: column;
   }
-  .member .memberAbilities #member-illustration {
-    width: inherit;
-    object-fit: cover;
-    object-position: center;
+  .member .memberAbilities img {
+    width: 18em;
   }
-  .member .memberAbilities #member-illustration img {
-    width: 90%;
+  .member .memberAbilities p {
+    margin: 0% 0% 2% 2%;
   }
 }
 

@@ -1,27 +1,42 @@
-.member{
-    article{
-        margin: 2% 20%;
-        @include flex($dir: row);
-        .memberDescription{
-            padding : 0 2%;
+.member {
+    margin: 2% 20% 0%;
+
+    .memberIntroduction {
+        @include flex(center, row, center);
+
+        .memberDescription {
+            .blueLine {
+                width: 20em;
+                height: 2px;
+                background-color: $thirdColor;
+                margin-left: 5%;
+                margin-bottom: 5%;
+            }
+        }
+
+        img {
+            width:15em;
+            border-radius: 7.5em;
+        }
+        h1,p {
+            margin-left: 5%;
         }
     }
-}
 
-#memberPic{
-    width: 30%;
-    object-fit: cover;
-    object-position: top;
-    img{
-        width: 15em;
+    #memberText2 {
+        margin: 5% 0% 5%;
     }
-}
 
-#member-illustration{
-    width: inherit;
-    object-fit: cover;
-    object-position: center;
-    img{
-        width: 25em;
+    .memberAbilities {
+        @include flex(center, row, flex-start);
+        background-color: $fifthColor;
+        margin-bottom: 2em;
+
+        img {
+            width: 18em;
+        }
+        p {
+            margin: 2% 2% 2% 2%;
+        }
     }
 }
