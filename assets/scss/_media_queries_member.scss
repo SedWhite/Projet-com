@@ -1,0 +1,125 @@
+@media screen and (max-width: 1024px){
+    // -----responsive page member ---------
+    .member {
+        margin: 2% 20% 0%;
+    
+        .memberIntroduction {
+            @include flex(center, row, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
+            }
+        }
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+    
+        .memberAbilities {
+            @include flex(center, row, flex-start);
+    
+            img {
+                width: 18em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+
+
+
+    //---------- responsive page members ----------
+    .member {
+        margin: 2% 20% 0%;
+    
+        .memberIntroduction {
+            @include flex(center, row, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
+            }
+        }
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+    
+        .memberAbilities {
+            @include flex(center, column, flex-start);
+    
+            img {
+                width: 25em;
+                padding: 5% 0% 7%;
+            }
+            p {
+                margin: 0% 0% 2% 2%;
+            }
+        }
+    }
+}
+
+// --------------------------------------------
+@media screen and (max-width: 630px){
+    .member {
+        margin: 2% 20% 0%;
+    }
+}
+
+
+// --------------------------------------------
+@media screen and (max-width: 426px){
+    .member{
+        article{
+            @include flex($dir: row);
+            .memberIntroduction{
+                padding : 0 2%;
+            }
+        }
+
+        .memberIntroduction{
+
+            @include flex(center, column, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
+            }
+        }
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+
+        .memberAbilities {
+            @include flex(center, column, center);
+    
+            #memberIllustration {
+                img {
+                    width: 18em;
+                    margin-top: 2em;
+                    margin-left: 2em;
+                    }
+                #memberText3 {
+                    margin: 2em;
+                }
+            }    
+        }
+    }
+
+    .member {
+        margin: 2% 20% 0%;
+    }
+}
+

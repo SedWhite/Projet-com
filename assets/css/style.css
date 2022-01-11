@@ -834,63 +834,6 @@ footer .barre {
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 1024px) {
-  .member {
-    margin: 2% 20% 0%;
-  }
-  .member .memberIntroduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .member .memberIntroduction img {
-    width: 15em;
-    border-radius: 7.5em;
-  }
-  .member .memberIntroduction h1, .member .memberIntroduction p {
-    margin-left: 5%;
-  }
-  .member #memberText2 {
-    margin: 5% 0% 5%;
-  }
-  .member .memberAbilities {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .member .memberAbilities img {
-    width: 18em;
-  }
-
-  #introContact .contactHeader iframe {
-    width: 20rem;
-    height: 20em;
-  }
-
-  #galleryItself .boxSizing {
-    padding-left: 20%;
-  }
-}
-@media screen and (max-width: 950px) {
-  .returnToHeader {
-    display: none;
-  }
-
-  #foot .mentionsLegales {
-    margin-left: 1rem;
-  }
-  #foot .socialNetworks {
-    font-size: 1.5rem;
-    margin-right: 1rem;
-    margin-left: 2rem;
-  }
-
-  #galleryItself .boxSizing img {
-    width: 70%;
-  }
-}
 @media screen and (max-width: 768px) {
   h1 {
     font-family: poiret;
@@ -959,69 +902,6 @@ footer .barre {
     font-size: 2em;
     text-align: center;
     margin: 2rem 0rem 1rem;
-  }
-
-  .member .memberIntroduction .memberDescription .blueLine {
-    width: 10.5rem;
-    height: 2px;
-    background-color: #67F7F0;
-  }
-
-  .member {
-    margin: 2% 20% 0%;
-  }
-  .member .memberIntroduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-  }
-  .member .memberIntroduction img {
-    width: 15em;
-    border-radius: 7.5em;
-  }
-  .member .memberIntroduction h1 {
-    font-size: 1.8rem;
-  }
-  .member .memberIntroduction h1, .member .memberIntroduction p {
-    margin-left: 5%;
-  }
-  .member #memberText2 {
-    margin: 5% 0% 5%;
-  }
-  .member .memberAbilities {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .member .memberAbilities img {
-    width: 25em;
-    padding: 5% 0% 7%;
-  }
-  .member .memberAbilities p {
-    margin: 0% 0% 2% 2%;
-  }
-
-  #introContact .contactHeader .contactAddress {
-    font-size: 1em;
-  }
-
-  #formContact form .labelandInput {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    font-size: 0.8em;
-  }
-  #formContact form .labelandInput input, #formContact form .labelandInput textarea {
-    height: 40px;
-    font-size: 0.8em;
-  }
-  #formContact form .labelandInput textarea {
-    height: 200px;
-    max-width: 70%;
-    max-height: 200px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1102,42 +982,76 @@ footer .barre {
     width: 8rem;
   }
 }
-@media screen and (max-width: 630px) {
-  footer {
-    font-size: 0.8rem;
-  }
-  footer .barre {
-    display: none;
-  }
-  footer #foot .socialNetworks {
-    font-size: 1rem;
-  }
-
+@media screen and (max-width: 1024px) {
   .member {
     margin: 2% 20% 0%;
   }
-
-  #introContact .contactHeader iframe {
-    width: 10rem;
-    height: 10rem;
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
   }
-
-  #formContact {
-    margin: 0;
+  .member .memberIntroduction img {
+    width: 15em;
+    border-radius: 7.5em;
   }
-
-  #formContact .button {
-    font-size: 0.8em;
+  .member .memberIntroduction h1, .member .memberIntroduction p {
+    margin-left: 5%;
   }
-
-  #galleryItself .boxSizing {
-    padding-left: 10%;
+  .member #memberText2 {
+    margin: 5% 0% 5%;
   }
-  #galleryItself .boxSizing img {
-    width: 90%;
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .member .memberAbilities img {
+    width: 18em;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
+  .member {
+    margin: 2% 20% 0%;
+  }
+  .member .memberIntroduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .member .memberIntroduction img {
+    width: 15em;
+    border-radius: 7.5em;
+  }
+  .member .memberIntroduction h1, .member .memberIntroduction p {
+    margin-left: 5%;
+  }
+  .member #memberText2 {
+    margin: 5% 0% 5%;
+  }
+  .member .memberAbilities {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .member .memberAbilities img {
+    width: 25em;
+    padding: 5% 0% 7%;
+  }
+  .member .memberAbilities p {
+    margin: 0% 0% 2% 2%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .member {
+    margin: 2% 20% 0%;
+  }
+}
+@media screen and (max-width: 426px) {
   .member article {
     display: flex;
     justify-content: center;
@@ -1169,13 +1083,37 @@ footer .barre {
     align-items: center;
     flex-direction: column;
   }
-  .member .memberAbilities img {
+  .member .memberAbilities #memberIllustration img {
     width: 18em;
+    margin-top: 2em;
+    margin-left: 2em;
   }
-  .member .memberAbilities p {
-    margin: 0% 0% 2% 2%;
+  .member .memberAbilities #memberIllustration #memberText3 {
+    margin: 2em;
   }
 
+  .member {
+    margin: 2% 20% 0%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #galleryItself .boxSizing {
+    padding-left: 20%;
+  }
+
+  #galleryItself .boxSizing img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 630px) {
+  #galleryItself .boxSizing {
+    padding-left: 10%;
+  }
+  #galleryItself .boxSizing img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 426px) {
   #galleryItself .boxSizing {
     padding-left: 0%;
   }
@@ -1192,11 +1130,36 @@ footer .barre {
   footer #foot .socialNetworks {
     font-size: 1rem;
   }
-
-  .member {
-    margin: 2% 20% 0%;
+}
+@media screen and (max-width: 1024px) {
+  #introContact .contactHeader iframe {
+    width: 20rem;
+    height: 20em;
+  }
+}
+@media screen and (max-width: 768px) {
+  #introContact .contactHeader .contactAddress {
+    font-size: 1em;
   }
 
+  #formContact form .labelandInput {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+  #formContact form .labelandInput input, #formContact form .labelandInput textarea {
+    height: 40px;
+    font-size: 0.8em;
+  }
+  #formContact form .labelandInput textarea {
+    height: 200px;
+    max-width: 70%;
+    max-height: 200px;
+  }
+}
+@media screen and (max-width: 630px) {
   #introContact .contactHeader iframe {
     width: 10rem;
     height: 10rem;
@@ -1210,9 +1173,54 @@ footer .barre {
     font-size: 0.8em;
   }
 }
-@media screen and (max-height: 850px) {
+@media screen and (max-width: 426px) {
+  #introContact .contactHeader iframe {
+    width: 10rem;
+    height: 10rem;
+  }
+
   #formContact {
-    height: 130vh;
+    margin: 0;
+  }
+
+  #formContact .button {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 950px) {
+  .returnToHeader {
+    display: none;
+  }
+
+  #foot .mentionsLegales {
+    margin-left: 1rem;
+  }
+  #foot .socialNetworks {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 630px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .barre {
+    display: none;
+  }
+  footer #foot .socialNetworks {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .barre {
+    display: none;
+  }
+  footer #foot .socialNetworks {
+    font-size: 1rem;
   }
 }
 
