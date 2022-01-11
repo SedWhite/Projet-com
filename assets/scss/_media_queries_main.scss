@@ -1,30 +1,34 @@
 @media screen and (max-width: 1024px){
     // -----responsive page member ---------
-    .member{
-        article{
-            margin: 2% 10%;
-            @include flex($dir: row);
-            .memberIntroduction{
-                padding : 0 2%;
+    .member {
+        margin: 2% 20% 0%;
+    
+        .memberIntroduction {
+            @include flex(center, row, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
             }
         }
-    }
-
-    #memberPic{
-        width: 30%;
-        object-fit: cover;
-        object-position: top;
-        img{
-            width: 15em;
-        }
-    }
     
-    #member-illustration{
-        width: inherit;
-        object-fit: cover;
-        object-position: center;
-        img{
-            width: 25em;
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+    
+        .memberAbilities {
+            @include flex(center, row, flex-start);
+    
+            img {
+                width: 18em;
+            }
+            p {
+                margin: 0% 0% 2% 2%;
+            }
+    
         }
     }
     //------------------RESPONSIVE PAGE CONTACT--------------------------
@@ -115,55 +119,35 @@
 
 
     //---------- responsive page members ----------
-    .member{
-        article{
-            margin: 2% 10%;
-            @include flex($dir: row);
-            .memberIntroduction{
-                padding : 0 2%;
+    .member {
+        margin: 2% 20% 0%;
+    
+        .memberIntroduction {
+            @include flex(center, row, center);
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
+            }
+            h1,p {
+                margin-left: 5%;
             }
         }
-
-        .memberIntroduction{
-
-            // #memberPic{
-            //     width: 30%;
-            //     object-fit: cover;
-            //     object-position: top;
-            //     img{
-            //         width: 15em;
-            //     }
-            // }
-            // .memberDescription {
-            //     width: 100%;
-            //     #memberText1 {
-            //         width: 50%;
-            //     }
-            // }
-            
-            // #member-illustration{
-            //     width: inherit;
-            //     object-fit: cover;
-            //     object-position: center;
-            //     img{
-            //         width: 25em;
-            //     }
-            // }
-
-            @include flex(center, row,center);
-
-            #memberPic{
-                width: 40em;
-                object-fit: cover;
-                object-position: top;
-                img{
-                    width: 100%;
-                }
-            }
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
         }
-
+    
         .memberAbilities {
-            @include flex();
+            @include flex(center, column, flex-start);
+    
+            img {
+                width: 25em;
+                padding: 5% 0% 7%;
+            }
+            p {
+                margin: 0% 0% 2% 2%;
+            }
         }
     }
     //------------------RESPONSIVE PAGE CONTACT--------------------------
@@ -283,6 +267,11 @@
             }
         }
     }
+    // -----responsive page member ---------
+    .member {
+        margin: 2% 20% 0%;
+    }
+        
     //--------------------RESPONSIVE PAGE CONTACT----------------------------------------------
     #introContact .contactHeader iframe{
         width: 10rem;
@@ -309,61 +298,31 @@
 
         .memberIntroduction{
 
-            // #memberPic{
-            //     width: 30%;
-            //     object-fit: cover;
-            //     object-position: top;
-            //     img{
-            //         width: 15em;
-            //     }
-            // }
-            // .memberDescription {
-            //     width: 100%;
-            //     #memberText1 {
-            //         width: 50%;
-            //     }
-            // }
-            
-            // #member-illustration{
-            //     width: inherit;
-            //     object-fit: cover;
-            //     object-position: center;
-            //     img{
-            //         width: 25em;
-            //     }
-            // }
-
             @include flex(center, column, center);
-
-            #memberPic{
-                width: 10em;
-                // object-fit: cover;
-                // object-position: top;
-                
-                img{
-                    width: 100%; 
-                }
+    
+            img {
+                width:15em;
+                border-radius: 7.5em;
             }
-
-          
+            h1,p {
+                margin-left: 5%;
+            }
         }
-
+    
+        #memberText2 {
+            margin: 5% 0% 5%;
+        }
+    
         .memberAbilities {
-            @include flex();
-
-            #member-illustration{
-                width: inherit;
-                object-fit: cover;
-                object-position: center;
-                img{
-                    width: 90%;
-                }
+            @include flex(center, column, center);
+    
+            img {
+                width: 18em;
             }
+            p {
+                margin: 0% 0% 2% 2%;
+            }
+    
         }
     }
 }
-
-
-
-
-
