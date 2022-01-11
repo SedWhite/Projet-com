@@ -390,3 +390,10 @@
     }
 }
 
+// RESPONSIVE HAUTEUR DE LA PAGE CONTACT
+@media screen and (max-height:850px){
+    #formContact{
+        height: 130vh;
+    }
+}
+
