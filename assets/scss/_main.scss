@@ -10,8 +10,15 @@ body {
 }
 
 a{
+    position:relative;
     color: $primaryColor;
+    transition: all 0.3s ease-in;
 }
+
+a:hover{
+  color: $thirdColor;
+}
+      
 
 h1{
     font-family: poiret;
@@ -32,6 +39,12 @@ p{
 
 .button{
     @include button;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+  @include button ($color_text:$secondaryColor, $background_color:$primaryColor, $border_color:$thirdColor);
+  box-shadow: 3px 3px $thirdColor;
 }
 
 // --------------------------

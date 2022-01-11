@@ -39,8 +39,21 @@ header #desktopNavbar .navbar {
   align-items: center;
   flex-direction: row;
 }
-header #desktopNavbar .navbar a:hover {
-  color: #67F7F0;
+header #desktopNavbar .navbar a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  background-color: #67F7F0;
+  transition: width 0.3s ease-in-out;
+}
+header #desktopNavbar .navbar a::after {
+  bottom: 0;
+}
+header #desktopNavbar .navbar a:hover::after {
+  width: 50px;
 }
 header #desktopNavbar .navbar #desktopMember > a {
   cursor: crosshair;
@@ -178,7 +191,13 @@ body {
 }
 
 a {
+  position: relative;
   color: #FFFFFF;
+  transition: all 0.3s ease-in;
+}
+
+a:hover {
+  color: #67F7F0;
 }
 
 h1 {
@@ -206,6 +225,18 @@ p {
   padding: 10px 40px;
   border: solid black 2px;
   background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  font-size: 24px;
+  font-family: overpass;
+  color: black;
+  border-radius: 30px;
+  padding: 10px 40px;
+  border: solid #67F7F0 2px;
+  background-color: #FFFFFF;
+  box-shadow: 3px 3px #67F7F0;
 }
 
 * {
@@ -551,6 +582,8 @@ p {
 #galleryItself .miniature {
   width: 300px;
   height: 300px;
+  overflow: hidden;
+  display: inline-block;
 }
 #galleryItself .miniature img {
   width: 100%;
@@ -559,12 +592,16 @@ p {
   object-position: top;
   transition: all 0.3s ease-in-out;
 }
+#galleryItself .miniature img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
 #galleryItself .boxSizing {
   display: none;
   /* Caché par défaut */
   position: fixed;
   /* Reste en place */
-  z-index: 1;
+  z-index: 100;
   /* Mis en avant */
   padding-top: 100px;
   padding-left: 500px;
@@ -578,6 +615,9 @@ p {
   /* Scroll si besoin */
   background-color: black;
   background-color: rgba(0, 0, 0, 0.9);
+}
+#galleryItself .boxSizing img:hover {
+  cursor: pointer;
 }
 #galleryItself .modal-content {
   margin: auto;
@@ -613,7 +653,7 @@ p {
   font-size: 24px;
   color: #67F7F0;
   background-color: #303037;
-  padding: 5%;
+  padding: 10%;
 }
 
 #formContact {
@@ -691,12 +731,17 @@ footer {
   color: #67F7F0;
 }
 footer .returnToHeader {
-  position: absolute;
-  padding: 5px 10px;
-  top: -75px;
+  position: fixed;
+  padding: 5px 20px;
+  top: 550px;
   right: 10px;
+  z-index: 99;
   background-color: #303037;
+  border-radius: 30px;
   font-size: 2.5em;
+  box-shadow: 1px 1px 4px black;
+  animation-name: getHeader;
+  animation-duration: 0.5s;
 }
 footer .returnToHeader a {
   color: #67F7F0;
@@ -710,6 +755,14 @@ footer .barre {
   transform: translateX(-50%);
 }
 
+@keyframes getHeader {
+  from {
+    right: -10px;
+  }
+  to {
+    right: 10px;
+  }
+}
 #foot {
   display: flex;
   justify-content: space-between;
