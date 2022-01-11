@@ -1,0 +1,54 @@
+@media screen and (max-width: 1024px){
+    //------------------RESPONSIVE GALERIE-------------------------------------------
+    #galleryItself{
+        .boxSizing{
+            padding-left: 20%;
+        }
+    }
+
+    //------------------RESPONSIVE GALERIE--------------------------------
+    #galleryItself{
+        .boxSizing{
+            img{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 630px){
+    // ----RESPONSIVE GALERIE------
+    #galleryItself{
+        .boxSizing{
+            padding-left: 10%;
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 426px){
+    // ----RESPONSIVE GALERIE------
+    #galleryItself{
+        .boxSizing{
+            padding-left: 0%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    footer{
+        font-size: 0.8rem;
+        .barre{
+            display: none;
+        }
+        #foot {
+            .socialNetworks{
+                font-size: 1rem;
+            }
+        }
+    }
+}
