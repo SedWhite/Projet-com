@@ -1099,7 +1099,15 @@ footer .barre {
     margin: 2% 20% 0%;
   }
 }
+@media screen and (min-width: 1700px) {
+  #galleryItself {
+    width: 61%;
+  }
+}
 @media screen and (max-width: 1024px) {
+  #galleryItself {
+    width: 100%;
+  }
   #galleryItself .boxSizing {
     padding-left: 20%;
   }
