@@ -22,13 +22,13 @@ header {
                     width: 0;
                     left: 0;
                     background-color: $thirdColor;
-                    transition: width 0.3s ease-in-out;
+                    transition: width 0.5s ease-in-out;
               } 
               a::after{
                 bottom: 0;
               }   
               a:hover::after{
-                width: 50px;
+                width: 100%;
               }
             #desktopMember > a{
                 cursor: crosshair;

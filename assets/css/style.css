@@ -47,13 +47,13 @@ header #desktopNavbar .navbar a::after {
   width: 0;
   left: 0;
   background-color: #67F7F0;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.5s ease-in-out;
 }
 header #desktopNavbar .navbar a::after {
   bottom: 0;
 }
 header #desktopNavbar .navbar a:hover::after {
-  width: 50px;
+  width: 100%;
 }
 header #desktopNavbar .navbar #desktopMember > a {
   cursor: crosshair;
@@ -783,7 +783,7 @@ footer {
 footer .returnToHeader {
   position: fixed;
   padding: 5px 20px;
-  top: 600px;
+  bottom: 3rem;
   right: 10px;
   z-index: 99;
   background-color: #303037;
