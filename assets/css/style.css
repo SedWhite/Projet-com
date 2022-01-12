@@ -621,7 +621,7 @@ p {
   z-index: 100;
   /* Mis en avant */
   padding-top: 100px;
-  padding-left: 30%;
+  padding-left: 10rem;
   left: 0;
   top: 0;
   width: 100%;
@@ -635,9 +635,6 @@ p {
 }
 #galleryItself .boxSizing img {
   width: 80%;
-}
-#galleryItself .boxSizing img:hover {
-  cursor: pointer;
 }
 #galleryItself .modal-content {
   margin: auto;
@@ -1099,7 +1096,15 @@ footer .barre {
     margin: 2% 20% 0%;
   }
 }
+@media screen and (min-width: 1700px) {
+  #galleryItself {
+    width: 61%;
+  }
+}
 @media screen and (max-width: 1024px) {
+  #galleryItself {
+    width: 100%;
+  }
   #galleryItself .boxSizing {
     padding-left: 20%;
   }
