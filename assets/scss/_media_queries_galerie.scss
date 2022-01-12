@@ -1,12 +1,17 @@
-@media screen and (max-width: 1024px){
-    //------------------RESPONSIVE GALERIE-------------------------------------------
+@media screen and (min-width: 1700px){
     #galleryItself{
+        width: 61%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    #galleryItself{
+        width: 100%;
         .boxSizing{
             padding-left: 20%;
         }
     }
 
-    //------------------RESPONSIVE GALERIE--------------------------------
     #galleryItself{
         .boxSizing{
             img{
@@ -17,7 +22,6 @@
 }
 
 @media screen and (max-width: 630px){
-    // ----RESPONSIVE GALERIE------
     #galleryItself{
         .boxSizing{
             padding-left: 10%;
@@ -30,7 +34,6 @@
 
 
 @media screen and (max-width: 426px){
-    // ----RESPONSIVE GALERIE------
     #galleryItself{
         .boxSizing{
             padding-left: 0%;
