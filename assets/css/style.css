@@ -783,7 +783,7 @@ footer {
 footer .returnToHeader {
   position: fixed;
   padding: 5px 20px;
-  top: 600px;
+  bottom: 3rem;
   right: 10px;
   z-index: 99;
   background-color: #303037;
