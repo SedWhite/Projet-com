@@ -555,6 +555,9 @@ p {
   transform: translateX(-50%);
   padding: 10px 60px;
 }
+#mainIndex #indexGallerie #realisation .mySlides {
+  height: 800px;
+}
 #mainIndex #opinion > p {
   text-align: center;
   margin: 2rem 0rem;
