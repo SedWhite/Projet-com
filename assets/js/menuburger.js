@@ -23,3 +23,9 @@ mobileMember.addEventListener("click", function(){
     let dropdownMobileMember = document.querySelector(".memberMobileDropdown");
     dropdownMobileMember.classList.toggle("displayNone");
 });
+
+// ANIMATION CROIX
+link.addEventListener('click', function(e) {
+    e.preventDefault()
+    burger.classList.toggle('open')
+})
